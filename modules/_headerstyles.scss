@@ -1,0 +1,72 @@
+/* ESTILOS HEADER Y CARUSEL*/
+
+
+.grillaHeader{
+    display: grid; 
+    background-image: $bgheader;
+    grid-template-areas: "area1 area2 area2 area2 area3"
+                        ". . area4 . .";
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-top: 0.5em;
+
+    .grillaHeader__logoHeader{
+        grid-area: area2;
+        width: 45%;
+        height: auto;
+        text-align: center;
+        justify-self: center;  
+    }
+    
+    .grillaHeader__sloganHeader{
+        grid-area: area4;
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: lighter;
+        text-align: center;
+        animation-duration: 5s;
+        animation-name: animacion-header;    
+    }
+}
+
+
+
+@keyframes animacion-header{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.menu-activo{
+    border-bottom: solid 2px $cvioleta;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 6rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: -3px 4px 5px #4B4B4B;
+    font-size: 1em;
+    transition: 2s;
+}
+
+.carousel-caption:hover{
+    transform: scale(1.1, 1.1);
+    opacity: 100%;
+}
+
+.oscurecer{
+    filter: brightness(70%);
+}
+
+
+/* FIN ESTILOS HEADER Y CARUSEL */

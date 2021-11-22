@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="minutoIT: sección contacto. Ponete en contacto con nosotros. Enviá tus comentarios, ideas y se parte de esta comunidad de informáticos e informáticas de nuestro paías.">
+    <meta name="keywords" content="contacto, minutoit, sistemas, informatica, cursos gratis, informacion, trabajo, empleos, descargas, programacion, open source, consejos, analista sistemas, informatica, argentina, trabajar, industria, sindicato, diseño, web"/>
+    <link href="../css/bootstrap.css" rel="stylesheet">
+    <link href="../css/estilos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Contacto - minutoIT: comunicate con nosotros y dejá tu aporte</title>
+</head>
+<body>
+
+   <!--Header------------------------------------------------------------------------------------------>
+   <header>
+    <div class="container-fluid">
+        <div class="grillaHeader">
+            <div class="grillaHeader__logoHeader">
+                <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="logo minuto IT" class="p-3 w-40 img-fluid"></a>
+            </div> 
+            <div class="grillaHeader__sloganHeader">
+                <p class="h5 c-ocre">Noticias y recursos libres para la comunidad informática</p>
+            </div>                   
+        </div>
+    </div>
+</header>  
+<!--Fin Header------------------------------------------------------------------------------------------>
+
+    <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
+    <div class="container-fluid sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-naranjaGradient p-3">    
+          <a class="navbar-brand" href="../index.html"><i class="bi bi-mouse2"></i></a>          
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+              <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="./noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item dropdown">
+              <div class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Herramientas
+              </div>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>
+                <li><a class="dropdown-item" href="descargas.html">Descargas</a></li>
+              </ul>
+              <li class="nav-item">
+                  <a class="nav-link" href="./comunidad.html">Comunidad</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link menu-activo" href="./contacto.html">Contacto</a>
+                  </li>
+              </li>                
+          </ul>
+          <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Ir</button>
+          </form>
+          </div>
+      </div>
+      </nav>
+  
+  <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
+    <div class="espacioChico"></div>
+
+    <!-- IMAGEN Y TEXTO -------------------------------------------------------------------------------------------->
+    <section class="container mt-5 p-3">
+      <div class="row align-items-center">        
+        <div class="col-md-6 lign-self-center">
+            <h1 class="h1NoticiasHome c-violeta text-start p-3 border-start border-warning"> PONETE EN <strong>CONTACTO</strong> CON MINUTO<strong>IT</strong></h1>
+          </div>
+          <div class="col-md-6 lign-self-center">
+            <img src="../Images/contacto.jpg" alt="Ponete en contacto con minuto IT" class="img-fluid shadow p-3 mb-5 bg-body rounded">
+          </div>        
+      </div>
+    </section>
+
+    <!-- FIN IMAGEN Y TEXTO -------------------------------------------------------------------------------------------->
+
+
+    <!-- FORMULARIO DE CONTACTO -------------------------------------------------------------------------------------------->
+    <div class="container mb-5">
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputNombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="inputNombre" placeholder="Ingresá tu nombre">
+      </div>
+      <div class="col-md-6">
+        <label for="inputApellido" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="inputApellido" placeholder="Ingresá tu apellido">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresá tu correo electrónico">
+      </div>
+      <div class="col-md-6">
+        <label for="inputTel" class="form-label">Teléfono</label>
+        <input type="text" class="form-control" id="inputTel" placeholder="Dejanos un número de contacto">
+      </div>
+
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="inputCity" placeholder="En qué ciudad / localidad vivís?">
+      </div>
+      <div class="col-md-4">
+        <label for="inputProvincia" class="form-label">Provincia</label>
+        <select id="inputProvincia" class="form-select">
+          <option selected>Seleccioná...</option>
+          <option>Buenos Aires</option>
+          <option>Capital Federal</option>
+          <option>Catamarca</option>
+          <option>Chaco</option>
+          <option>Chubut</option>
+          <option>Córdoba</option>
+          <option>Corrientes</option>
+          <option>Entre Ríos</option>
+          <option>Formosa</option>
+          <option>Jujuy</option>
+          <option>La Pampa</option>
+          <option>La Rioja</option>
+          <option>Mendoza</option>
+          <option>Misiones</option>
+          <option>Neuquén</option>
+          <option>Río Negro</option>
+          <option>Salta</option>
+          <option>San Juan</option>
+          <option>San Luis</option>
+          <option>Santa Cruz</option>
+          <option>Santa Fe</option>
+          <option>Santiago del Estero</option>
+          <option>Tierra del Fuego</option>
+          <option>Tucumán</option>
+
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputCp" class="form-label">Código Postal</label>
+        <input type="text" class="form-control" id="inputCp">
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="trabajoSistemas">
+          <label class="form-check-label" for="trabajoSistemas">Activá si ya trabajás en sistemas</label>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" role="switch" id="recibirNews" checked>
+          <label class="form-check-label" for="recibirNews">Quiero recibir noticias en mi mail</label>
+        </div>
+      </div>
+      <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary btn-warning">Enviar</button>
+      </div>     
+    </form>
+  </div>
+  <div class="espacio"></div>
+
+    <!-- FIN FORMULARIO DE CONTACTO -------------------------------------------------------------------------------------------->
+
+
+    <!-- FOOTER -------------------------------------------------------------------------------------------->
+  <footer class="container-fluid bg-violetaDark">
+    <div class="container p-4">
+      <div class="row c-blanco">
+        <div class="col-12 col-lg-3">
+          <img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" class="w-10 img-fluid">
+        </div>
+        <div class="col-12 col-lg-3 offset-lg-1">
+          <h4>minuto IT</h4>
+          <p>Av. Belgrano 1336</p>
+          <p>info@minutoit.com</p>
+        </div>
+        <div class="col-12 col-lg-3">
+          <div class="col-12 offset-lg-1">
+            <h4>Seguinos en las redes!</h4>
+          </div>
+          <div class="col-12 fs-3 d-flex flex-row justify-content-around">
+            <p class="bi-instagram"></p>
+            <p class="bi-youtube"></p>
+            <p class="bi-linkedin"></p>
+            <p class="bi-twitter"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN FOOTER -------------------------------------------------------------------------------------------->
+    <script src="../js/bootstrap.bundle.js"></script>    
+</body>
+</html>

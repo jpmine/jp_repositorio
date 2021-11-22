@@ -1,0 +1,122 @@
+.centrar-img 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@mixin bloques($width, $height, $color) 
+{
+    height: $height;
+    width: $width;
+    background-color: $color;
+ }
+
+@each $color in naranja, violeta, marron, gris, ocre {
+    .bloques__comunidad--#{$color}
+    { 
+        @if $color == naranja{
+            @include bloques(100%, 100%, $bgnaranja);
+        }
+        @else if $color == violeta{
+            @include bloques(100%, 100%, $bgvioleta);
+            color: $cblanco;
+        }
+        @else if $color == marron{
+            @include bloques(100%, 100%, $bgmarron);
+        }
+        @else if $color == gris{
+            @include bloques(100%, 100%, $bggris);
+        }
+        @else{
+            @include bloques(100%, 100%, $bgocre);
+        }       
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 2em;
+        margin: 0.3em;
+        
+        a{
+            padding: 2em;
+            font-weight: bold;
+            background-color: $bgvioleta;
+            text-decoration: none;
+            color: $cblanco;
+        }
+        
+        a:hover{
+            padding: 2em;
+            background-color: $bgmarron;
+        }
+        
+        img{
+            padding: 1em;
+        }
+        
+     }
+ }
+
+ 
+ .bloques__comunidad--icon{
+     padding: 2em;
+     border: solid 0.3em white;
+     border-radius: 4em;
+ }
+
+ @each $color in blanco, violeta, marron, ocre {
+    .bloques__comunidad--trabajo--#{$color}
+    { 
+        @if $color == blanco{
+            @include bloques(24em, 24em, $bgblanco);
+        }
+        @else if $color == violeta{
+            @include bloques(24em, 24em, $bgvioleta);
+            color: $cblanco;
+        }
+        @else if $color == marron{
+            @include bloques(24em, 24em, $bgmarron);
+            color: $cblanco;
+        }
+        @else{
+            @include bloques(24em, 24em, $bgocre);
+        } 
+        padding: 2em;
+        margin: 1em;
+        transition: 0.5s;
+        opacity: 85%;
+        border-radius: 2em;
+    }
+    .bloques__comunidad--trabajo--#{$color} h3{
+        font-weight: bold;
+    }
+
+    .bloques__comunidad--trabajo--#{$color} p{
+        padding: 2em;
+    }
+
+    .bloques__comunidad--trabajo--#{$color}:hover{
+        transform: scale(1.1, 1.1);
+        opacity: 100%;
+        
+    }
+ }
+
+ .comunidad__peliculas--activa{
+     border: solid 3px $cvioleta;
+     filter: brightness(75%);
+ }
+
+ .comunidad__peliculas--activa:hover{
+    border: solid 6px $cnaranja;
+    filter: brightness(100%);
+ }
+  
+
+
+
+
+
+
+ 
+ 
