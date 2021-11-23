@@ -35,7 +35,7 @@ body{
     position: relative;
     animation-name: texto-home;
     animation-duration: 1s; 
-    animation-delay: 6s;
+    animation-delay: 0.3s;
   }
   
   @keyframes texto-home {
@@ -95,3 +95,18 @@ body{
     height: 20em;
     text-align: center;
 }
+
+.animacionTextoCar {
+    position: relative;
+    animation-name: texto-home-car;
+    animation-duration: 1s; 
+    animation-delay: 1s;
+    transition: ease-in;
+  }
+  
+  @keyframes texto-home-car {
+    0%   {font-size: 0em; color: $cnaranja;}   
+    100% {font-size: 2em; color: $cblanco;}
+  }
+
+  

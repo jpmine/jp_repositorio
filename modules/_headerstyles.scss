@@ -2,32 +2,26 @@
 
 
 .grillaHeader{
-    display: grid; 
     background-image: $bgheader;
-    grid-template-areas: "area1 area2 area2 area2 area3"
-                        ". . area4 . .";
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     margin-top: 0.5em;
 
     .grillaHeader__logoHeader{
-        grid-area: area2;
-        width: 45%;
-        height: auto;
-        text-align: center;
-        justify-self: center;  
+        margin: 0px;
     }
     
     .grillaHeader__sloganHeader{
-        grid-area: area4;
-        font-size: 1rem;
+        font-size: 0.2rem;
         font-style: normal;
         font-weight: lighter;
-        text-align: center;
+        text-align: right;
         animation-duration: 5s;
         animation-name: animacion-header;    
     }
 }
+
+
 
 
 
@@ -41,7 +35,7 @@
 }
 
 .menu-activo{
-    border-bottom: solid 2px $cvioleta;
+    border-bottom: solid 3px $cvioleta;
 }
 
 .carousel-caption {

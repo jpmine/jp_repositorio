@@ -17,69 +17,57 @@
 <body>
 
    <!--Header------------------------------------------------------------------------------------------>
-   <header>
-    <div class="container-fluid">
-        <div class="grillaHeader">
-            <div class="grillaHeader__logoHeader">
-                <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="logo minuto IT" class="p-3 w-40 img-fluid"></a>
-            </div> 
-            <div class="grillaHeader__sloganHeader">
-                <p class="h5 c-ocre">Noticias y recursos libres para la comunidad informática</p>
-            </div>                   
-        </div>
-    </div>
-</header>  
-<!--Fin Header------------------------------------------------------------------------------------------>
-
-    <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-    <div class="container-fluid sticky-top">
-      <nav class="navbar navbar-expand-lg navbar-light bg-naranjaGradient p-3">    
-          <a class="navbar-brand" href="../index.html"><i class="bi bi-mouse2"></i></a>          
+    <header class="container-fluid">
+      <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
+      <nav class="navbar navbar-expand-lg navbar-light bg-gris">
+        <div class="container-fluid">
+          <img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="125" height="auto" class="p-2">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-              <a class="nav-link" href="./noticias.html">Noticias</a>
-              </li>
-              <li class="nav-item dropdown">
-              <div class="nav-link dropdown-toggle menu-activo" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Herramientas
-              </div>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="./cursos.html">Cursos</a></li>
-                <li><a class="dropdown-item" href="./descargas.html">Descargas</a></li>
-              </ul>
-              <li class="nav-item">
-                  <a class="nav-link" href="./comunidad.html">Comunidad</a>
-                  </li>
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <div class="nav-link dropdown-toggle menu-activo" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Herramientas
+                  </div>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../pages/cursos.html">Cursos</a></li>
+                    <li><a class="dropdown-item" href="../pages/descargas.html">Descargas</a></li>
+                  </ul>
                   <li class="nav-item">
-                  <a class="nav-link" href="./contacto.html">Contacto</a>
-                  </li>
-              </li>                
-          </ul>
-          <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit">Ir</button>
-          </form>
+                    <a class="nav-link" href="../pages/comunidad.html">Comunidad</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                  </li>                
+                </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 c-blanco" type="search" placeholder="Quiero encontrar..." aria-label="Search">
+              <button class="btn btn-outline-warning c-negro" type="submit">Buscar</button>
+            </form>
           </div>
-      </div>
+        </div>
       </nav>
-  
-  <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
+    <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
+    </header>  
+    <!--Fin Header------------------------------------------------------------------------------------------>
     <div class="espacioChico"></div>
-    
-    <div class="container p-3 avisoDescargas">
-    <div class="alert alert-warning d-flex align-items-center bg-gris" role="alert">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
-        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-      </svg>
+    <div class="container-fluid">
+      <h1 class="h1NoticiasHome c-violeta text-center p-3 animacionTextoHome">DESCARGAS <strong>GRATUITAS</strong></h1>
+      <p class="fw-bold text-center bg-naranjaGradient c-negro p-1">Encontrá esa aplicación que estás necesitando pero en software libre!</p>
+    </div>
+    <div class="container-fluid avisoDescargas">
+      <div class="alert bg-violetaDark c-blanco" role="alert">
       <div>
-        <h1>Todas las <strong>descargas</strong> son para instalar en Windows 10 64 bit</h1>
+        <h2 class="text-center">Todas las <strong>aplicaciones</strong> son para instalar en Windows 10 64 bit</h2>
       </div>
     </div>
   </div>

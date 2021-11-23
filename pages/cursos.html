@@ -16,65 +16,58 @@
 </head>
 <body>
 
-    <!--Header------------------------------------------------------------------------------------------>
-    <header>
-      <div class="container-fluid">
-          <div class="grillaHeader">
-              <div class="grillaHeader__logoHeader">
-                  <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="logo minuto IT" class="p-3 w-40 img-fluid"></a>
-              </div> 
-              <div class="grillaHeader__sloganHeader">
-                  <p class="h5 c-ocre">Noticias y recursos libres para la comunidad informática</p>
-              </div>                   
-          </div>
-      </div>
-  </header>  
-  <!--Fin Header------------------------------------------------------------------------------------------>
-   <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-   <div class="container-fluid sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-naranjaGradient p-3">    
-        <a class="navbar-brand" href="../index.html"><i class="bi bi-mouse2"></i></a>          
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 fw-bold">
-            <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./noticias.html">Noticias</a>
-            </li>
-            <li class="nav-item dropdown">
-            <div class="nav-link dropdown-toggle menu-activo" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Herramientas
-            </div>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="cursos.html">Cursos</a></li>
-              <li><a class="dropdown-item" href="descargas.html">Descargas</a></li>
-            </ul>
-            <li class="nav-item">
-                <a class="nav-link" href="./comunidad.html">Comunidad</a>
+   <!--Header------------------------------------------------------------------------------------------>
+    <header class="container-fluid">
+      <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
+      <nav class="navbar navbar-expand-lg navbar-light bg-gris">
+        <div class="container-fluid">
+          <img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="125" height="auto" class="p-2">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="./contacto.html">Contacto</a>
+                  <a class="nav-link" href="../pages/noticias.html">Noticias</a>
                 </li>
-            </li>                
-        </ul>
-        <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-secondary" type="submit">Ir</button>
-        </form>
+                <li class="nav-item dropdown">
+                  <div class="nav-link dropdown-toggle menu-activo" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Herramientas
+                  </div>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="../pages/cursos.html">Cursos</a></li>
+                    <li><a class="dropdown-item" href="../pages/descargas.html">Descargas</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/comunidad.html">Comunidad</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                    </li>
+                  </li>                
+                </ul>
+            <form class="d-flex">
+              <input class="form-control me-2 c-blanco" type="search" placeholder="Quiero encontrar..." aria-label="Search">
+              <button class="btn btn-outline-warning c-negro" type="submit">Buscar</button>
+            </form>
+          </div>
         </div>
-    </div>
-    </nav>
-
-<!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
+      </nav>
+    <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
+    </header>  
+    <!--Fin Header------------------------------------------------------------------------------------------>
   <div class="espacioChico"></div>
 
   <!--SECCIÓN CURSOS ------------------------------------------------------------------------------------------>
   <div class="container-fluid p-3">
-  <div class="alert bg-naranjaGradient" role="alert">
+    <div>
+      <h1 class="h1NoticiasHome c-violeta text-center p-3 animacionTextoHome">CURSOS <strong>LIBRES</strong></h1>
+      <p class="fw-bold text-center bg-naranjaGradient c-negro p-1">Compartimos cada semana cursos y material gratuito para seguir aprendiendo!</p>
+    </div>
+  <div class="alert bg-violetaDark c-blanco" role="alert">
     <h1 class="alert-heading">Apostá siempre a capacitarte!</h1>
     <p>Si querés trabajar en la industria de sistemas, la formación constante es tu mejor inversión. En la web hay miles de recursos gratuitos para aprender cada día nuevas cosas. Acá te dejamos un pequeño listado de cursos de lenguajes y herramientas que se utilizan mucho y que es importante que conozcas</p>
     <hr>
