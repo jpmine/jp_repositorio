@@ -45,7 +45,7 @@
   background-image: linear-gradient(to right, #adaca5, #dddbcf); }
 
 .bg-grisGradient {
-  background-image: bggrisgradient; }
+  background-image: linear-gradient(to right, #f8f8f8, #f0f0f0); }
 
 .bg-naranjaGradient {
   background-image: linear-gradient(to right, #eed91b, #c5b312); }
@@ -571,6 +571,9 @@ body {
 
 .h1NoticiasHome {
   font-size: 4em; }
+  @media only screen and (max-width: 450px) {
+    .h1NoticiasHome {
+      font-size: 2em; } }
 
 .animacionTextoHome {
   position: relative;

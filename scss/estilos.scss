@@ -29,6 +29,9 @@ body{
 
 .h1NoticiasHome{
     font-size: 4em;
+    @media only screen and (max-width: 450px) {
+            font-size: 2em;
+        }
 }
 
 .animacionTextoHome {
