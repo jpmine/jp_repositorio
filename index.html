@@ -16,9 +16,10 @@
 </head>
 <body>
     <!--Header------------------------------------------------------------------------------------------>
+    
     <header class="container-fluid">
       <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-      <nav class="navbar navbar-expand-lg navbar-light bg-naranjaGradient fixed-top m-2">
+      <nav class="navbar navbar-expand-lg navbar-light bg-blanco">
         <div class="container-fluid">
           <a href="index.html"><img src="./Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="115" height="auto" class="p-1"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,7 +51,7 @@
                 </ul>
             <form class="d-flex">
               <input class="form-control me-2 c-blanco p-2" type="search" placeholder="Quiero encontrar..." aria-label="Search">
-              <button class="btn btn-outline-warning bg-violeta c-negro" type="submit">Buscar</button>
+              <button class="btn btn-outline-warning bg-violeta c-blanco" type="submit">Buscar</button>
             </form>
           </div>
         </div>
@@ -58,204 +59,214 @@
     <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
     </header>  
     <!--Fin Header------------------------------------------------------------------------------------------>
-
     
-    <div class="espacioChico"></div>
     <!--CARROUSEL HOME ------------------------------------------------------------------------------------------>
-       <div class="container-fluid">
+    <main>
+      <div class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active data-bs-interval="1000"">
-                <img src="./Images/slide-2-home.jpg" class="d-block w-100 img-fluid oscurecer" alt="Joven con notebook en sillon">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active data-bs-interval="1000"">
+              <img src="./Images/slide-2-home.jpg" class="d-block w-100 img-fluid oscurecer" alt="Joven con notebook en sillon">
                 <div class="carousel-caption d-none d-md-block">
                   <h1 class="h1Carrousel animacionTextoCar">Bienvenid@s a<br> minutoIT</h1>
                   <p class="c-naranja animacionTextoCar">Un sitio para amantes de sistemas</p>
                 </div>
-              </div>
-              <div class="carousel-item data-bs-interval="1000"">
-                <img src="./Images/slide-3-home.jpg" class="d-block w-100 img-fluid oscurecer" alt="Joven mujer trabajando en pc">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2 class="h1Carrousel">Noticias</h2>
+            </div>
+            <div class="carousel-item data-bs-interval="1000"">
+              <img src="./Images/slide-3-home.jpg" class="d-block w-100 img-fluid oscurecer" alt="Joven mujer trabajando en pc">
+              <div class="carousel-caption d-none d-md-block">
+                  <h2 class="h1Carrousel">Noticias</h2>
                   <p class="c-naranja">Las últimas novedades del mundo IT, están aquí</p>
-                </div>
-              </div>
-              <div class="carousel-item data-bs-interval="1000"">
-                <img src="./Images/slide-4-home.jpg" class="d-block w-100 img-fluid oscurecer" alt="Teclado, momitor y mouse sobre mesa de trabajo">
-                <div class="carousel-caption d-none d-md-block">
-                <h2 class="h1Carrousel">Recursos</h2>
-                  <p class="c-naranja">Encontrá cursos, herramientas gratuitas y mucho más</p>
-                </div>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="carousel-item data-bs-interval="1000"">
+              <img src="./Images/slide-4-home.jpg" class="d-block w-100 img-fluid oscurecer" alt="Teclado, momitor y mouse sobre mesa de trabajo">
+              <div class="carousel-caption d-none d-md-block">
+                <h2 class="h1Carrousel">Recursos</h2>
+                <p class="c-naranja">Encontrá cursos, herramientas gratuitas y mucho más</p>
+              </div>
+            </div>
           </div>
-       </div>
-    
-    <!--FIN CARRROUSEL HOME ------------------------------------------------------------------------------------------>
-       <div class="espacio"></div>
-    <!-- CAJAS DE COLORES -------------------------------------------------------------------------------------------->
-    <div class="container-fluid gridContenidosHome">
-        <a href="pages/descargas.html"><div class="gridContenidosHome__item1 gridContenidosHome__item1--p gridContenidosHome__item1--img gridContenidosHome__item1:hover">
-            <img src="./Images/cloud-download-outline.png" alt="icono de nube" align="middle" class="img-fluid">
-            <h2>Descargas</h2>
-            <p>Encontrá en minutoIT todo el software libre que necesitás para trabajar</p>
-        </div></a>
-
-        <a href="pages/comunidad.html"><div class="gridContenidosHome__item2 gridContenidosHome__item2--p gridContenidosHome__item2--img gridContenidosHome__item2:hover">
-            <img src="./Images/account-switch.png" alt="icono de comunidad" align="middle" class="img-fluid">
-            <h2>Comunidad</h2>
-            <p>Vas a poder encontrar oportunidades de trabajo, información laboral y mucho más.</p>
-        </div></a>
-
-        <a href="pages/descargas.html"><div class="gridContenidosHome__item3 gridContenidosHome__item3--p gridContenidosHome__item3--img gridContenidosHome__item3:hover">
-            <img src="./Images/monitor-star.png" alt="icono de monitor" align="middle" class="img-fluid">
-            <h2>Herramientas</h2>
-            <p>Recursos, formación gratuita y distintas herramientas para tu día a día.</p>
-        </div></a>
-
-        <a href="pages/cursos.html"><div class="gridContenidosHome__item4 gridContenidosHome__item4--p gridContenidosHome__item4--img gridContenidosHome__item4:hover">
-            <img src="./Images/emoticon-cool-outline.png" alt="icono de cara feliz" align="middle" class="img-fluid">
-            <h2>Cursos</h2>
-            <p>Aprendé y capacitate con los mejores cursos gratuitos.</p>
-        </div></a>
-    </div>
-    <!-- FIN CAJAS DE COLORES -------------------------------------------------------------------------------------------->
-    <div class="espacio"></div>
-    <div class="container"><hr></div>
-    <div class="espacio"></div>
-
-    <!-- SECCION ÚLTIMAS NOTICIAS -------------------------------------------------------------------------------------------->
-    <section class="container p-3">
-      <div class="row">
-        <div class="col align-self-center border-5 border-start border-warning">
-          <h2 class="h1NoticiasHome c-violeta text-start animacionTextoHome">ÚLTIMAS <strong>NOTICIAS</strong></h2>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./Images/noticia-facebook.jpg" class="card-img-top img-fluid" alt="Facebook ahora es Meta">
+      </div>
+    </main>    
+    <!--FIN CARRROUSEL HOME ------------------------------------------------------------------------------------------>
+
+  <div class="espacio"></div>
+
+  <!-- CAJAS DE COLORES -------------------------------------------------------------------------------------------->
+  <section>
+    <div class="container-fluid gridContenidosHome">
+      <a href="pages/descargas.html">
+        <div class="gridContenidosHome__item1 gridContenidosHome__item1--p gridContenidosHome__item1--img gridContenidosHome__item1:hover">
+          <img src="./Images/cloud-download-outline.png" alt="icono de nube" align="middle" class="img-fluid">
+          <h2>Descargas</h2>
+          <p>Encontrá en minutoIT todo el software libre que necesitás para trabajar</p>
+        </div>
+      </a>
+
+      <a href="pages/comunidad.html">
+        <div class="gridContenidosHome__item2 gridContenidosHome__item2--p gridContenidosHome__item2--img gridContenidosHome__item2:hover">
+          <img src="./Images/account-switch.png" alt="icono de comunidad" align="middle" class="img-fluid">
+          <h2>Comunidad</h2>
+          <p>Vas a poder encontrar oportunidades de trabajo, información laboral y mucho más.</p>
+        </div>
+      </a>
+
+      <a href="pages/descargas.html">
+        <div class="gridContenidosHome__item3 gridContenidosHome__item3--p gridContenidosHome__item3--img gridContenidosHome__item3:hover">
+          <img src="./Images/monitor-star.png" alt="icono de monitor" align="middle" class="img-fluid">
+          <h2>Herramientas</h2>
+          <p>Recursos, formación gratuita y distintas herramientas para tu día a día.</p>
+        </div>
+      </a>
+
+      <a href="pages/cursos.html">
+        <div class="gridContenidosHome__item4 gridContenidosHome__item4--p gridContenidosHome__item4--img gridContenidosHome__item4:hover">
+          <img src="./Images/emoticon-cool-outline.png" alt="icono de cara feliz" align="middle" class="img-fluid">
+          <h2>Cursos</h2>
+          <p>Aprendé y capacitate con los mejores cursos gratuitos.</p>
+        </div>
+      </a>
+    </div>
+  </section>  
+  <!-- FIN CAJAS DE COLORES -------------------------------------------------------------------------------------------->
+
+  <div class="espacio"></div>
+  <div class="container"><hr></div>
+  <div class="espacio"></div>
+
+  <!-- SECCION ÚLTIMAS NOTICIAS -------------------------------------------------------------------------------------------->
+  <section class="container p-3">
+    <div class="row">
+      <div class="col align-self-center border-5 border-start border-warning">
+        <h2 class="h1NoticiasHome c-violeta text-start animacionTextoHome">ÚLTIMAS <strong>NOTICIAS</strong></h2>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./Images/noticia-facebook.jpg" class="card-img-top img-fluid" alt="Facebook ahora es Meta">
             <div class="card-body">
               <h5 class="card-title fw-bold">Facebook ahora es Meta: un cambio de nombre para qué?</h5>
               <p class="card-text">La noticia saltaba hace ahora una semana: Facebook estaba preparando un cambio de denominación. La ya histórica marca creada en sus años de universidad por Mark Zuckerberg iba a supeditarse a los nuevos planes de éste para crear un 'metaverso' basado en la realidad virtual y la realidad aumentada.</p>
               <a href="./pages/facebook-ahora-es-meta.html" class="btn bg-violeta c-blanco">SEGUIR LEYENDO</a>
             </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 18rem;">
+          <img src="./Images/stallman.jpg" class="card-img-top img-fluid" alt="Como sería el mundo sin Richard Stallman">
+          <div class="card-body">
+            <h5 class="card-title fw-bold">Cómo sería el mundo IT sin las ideas de Richard Stallman</h5>
+            <p class="card-text">El 27 de septiembre de 1983 a Richard Stallman se le hincharon las narices. Cuando intentó mejorar el firmware de las impresoras del MIT el fabricante lo impidió con un acuerdo de no divulgación (NDA), algo que para él era inaceptable. La industria, decía, estaba "acaparando el software".</p>
+            <a href="./pages/como-seria-mundo-tecnologia-hoy-dia-software-libre-ideas-richard-stallman.html" class="btn bg-violeta c-blanco">SEGUIR LEYENDO</a>
           </div>
         </div>
-        <div class="col">
-          <div class="card" style="width: 18rem;">
-            <img src="./Images/stallman.jpg" class="card-img-top img-fluid" alt="Como sería el mundo sin Richard Stallman">
-            <div class="card-body">
-              <h5 class="card-title fw-bold">Cómo sería el mundo IT sin las ideas de Richard Stallman</h5>
-              <p class="card-text">El 27 de septiembre de 1983 a Richard Stallman se le hincharon las narices. Cuando intentó mejorar el firmware de las impresoras del MIT el fabricante lo impidió con un acuerdo de no divulgación (NDA), algo que para él era inaceptable. La industria, decía, estaba "acaparando el software".</p>
-              <a href="./pages/como-seria-mundo-tecnologia-hoy-dia-software-libre-ideas-richard-stallman.html" class="btn bg-violeta c-blanco">SEGUIR LEYENDO</a>
-            </div>
+      </div>
+      <div class="col justify-content-center">
+        <aside class="container">
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-secondary" type="submit">Ir</button>
+            </form>
+            <div class="espacioChico"></div>
+          <div class="btn-group-vertical btn-group-lg">
+            <a href="./pages/descargas.html" class="btn btn-light bg-gris">DESCARGAS</a>
+            <div class="espacioChico"></div>
+            <button type="button" class="btn btn-light bg-gris">INFORMACIÓN LABORAL</button>
+            <div class="espacioChico"></div>
+            <a href="./pages/cursos.html" class="btn btn-light bg-gris">CURSOS</a>
+            <div class="espacioChico"></div>
+            <a href="./pages/contacto.html" class="btn btn-light bg-gris">CONTACTO</a>
           </div>
-        </div>
-        <div class="col justify-content-center">
-          <aside class="container">
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit">Ir</button>
-             </form>
-             <div class="espacioChico"></div>
-            <div class="btn-group-vertical btn-group-lg">
-              <a href="./pages/descargas.html" class="btn btn-light bg-gris">DESCARGAS</a>
-              <div class="espacioChico"></div>
-              <button type="button" class="btn btn-light bg-gris">INFORMACIÓN LABORAL</button>
-              <div class="espacioChico"></div>
-              <a href="./pages/cursos.html" class="btn btn-light bg-gris">CURSOS</a>
-              <div class="espacioChico"></div>
-              <a href="./pages/contacto.html" class="btn btn-light bg-gris">CONTACTO</a>
-            </div>
-            <div class="espacio"></div>
-            
-          </aside>
-        </div>
+          <div class="espacio"></div>          
+        </aside>
       </div>
     </div>
-    </section>
+  </div>
+  </section>
     <!-- FIN SECCION ÚLTIMAS NOTICIAS -------------------------------------------------------------------------------------------->
-    <div class="espacio"></div>
-    <div class="container"> <p class="placeholder-glow text-end"><span class="placeholder col-12 bg-warning placeholder-xs w-100"></span></p></div>
-    <div class="espacio"></div>
-    <!--<div class="container-fluid shadow p-3 mb-5 bg-body rounded c-violeta"><hr></div>
-    <!-- TABLA TRABAJOS -------------------------------------------------------------------------------------------->
-    <section class="container">
-      <div class="row">        
-        <div class="col">
-          <img src="./Images/trabajo-busqueda.jpg" alt="Búsqueda de trabajo." class="img-fluid shadow p-3 mb-5 bg-body rounded">
-        </div>
-        <div class="col align-self-center border-5 border-end border-danger">
-          <h2 class="h1NoticiasHome c-ocre text-end p-3 contactoFondo">BUSCÁS <strong>TRABAJO?</strong></h2>
-        </div>
+    
+  <div class="espacio"></div>
+  <div class="container"> <p class="placeholder-glow text-end"><span class="placeholder col-12 bg-warning placeholder-xs w-100"></span></p></div>
+  <div class="espacio"></div>
+
+  <!-- TABLA TRABAJOS -------------------------------------------------------------------------------------------->
+  <section class="container">
+    <div class="row">        
+      <div class="col">
+        <img src="./Images/trabajo-busqueda.jpg" alt="Búsqueda de trabajo." class="img-fluid shadow p-3 mb-5 bg-body rounded">
       </div>
-    </section>
+      <div class="col align-self-center border-5 border-end border-danger">
+        <h2 class="h1NoticiasHome c-ocre text-end p-3 contactoFondo">BUSCÁS <strong>TRABAJO?</strong></h2>
+      </div>
+    </div>
+  </section>
       
-    <section class="container table-responsive">
-      <table class="table table-striped table-hover text-center">
-        <thead>
-          <tr>
-            <th scope="col">Fecha</th>
-            <th scope="col">Puesto</th>
-            <th scope="col">Empresa</th>
-            <th scope="col">+ Info</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">4/11/2021</th>
-            <td>Desarrollador Full Stack - Remoto</td>
-            <td>ADN - Recursos Humanos</td>
-            <td><a class="link-secondary" href="https://www.computrabajo.com.ar/ofertas-de-trabajo/oferta-de-trabajo-de-desarrollador-full-stack-remoto-en-recoleta-A3D7B7D51FABC73861373E686DCF3405" target="_blank">VER</td>
-          </tr>
-          <tr>
-            <th scope="row">4/11/2021</th>
-            <td>BairesDev - Mendoza</td>
-            <td>Junior Technical Interviewer</td>
-            <td><a class="link-secondary" href="https://www.computrabajo.com.ar/ofertas-de-trabajo/oferta-de-trabajo-de-junior-technical-interviewer-remote-work-ref-1048-tint-en-mendoza-323B854A3D5233A761373E686DCF3405" target="_blank">VER</a></td>
-          </tr>
-          <tr>
-            <th scope="row">3/11/2021</th>
-            <td>Desarrollador C/C++ Sr.</td>
-            <td>KaizenRH</td>
-            <td><a class="link-secondary" href="https://www.computrabajo.com.ar/ofertas-de-trabajo/oferta-de-trabajo-de-desarrollador-cc-sr--zona-mataderos-en-mataderos-304D47FC77AC1AD161373E686DCF3405" target="_blank">VER</a></td>
-          </tr>
-
-          <tr>
-            <th scope="row">3/11/2021</th>
-            <td>Soporte de Aplicaciones</td>
-            <td>Selecta</td>
-            <td><a class="link-secondary" href="https://www.zonajobs.com.ar/empleos/soporte-de-aplicaciones-importante-diario-digital-selecta-1928306.html?indiceAviso=0" target="_blank">VER</td>
-          </tr>
-
-          <tr>
-            <th scope="row">2/11/2021</th>
-            <td>Senior Web UI Developer - Remoto</td>
-            <td>Selecta</td>
-            <td><a class="link-secondary" href="hhttps://www.zonajobs.com.ar/empleos/senior-web-ui-developer-remote-argentina-selecta-1956203.html?indiceAviso=1" target="_blank">VER</td>
-          </tr>
-
-          <tr>
-            <th scope="row">2/11/2021</th>
-            <td>Desarrollador de Sistemas</td>
-            <td>Benmonz</td>
-            <td><a class="link-secondary" href="https://www.zonajobs.com.ar/empleos/desarrollador-de-sistemas-benmonz-gestion-empresarial-1955857.html?indiceAviso=4" target="_blank">VER</td>
-          </tr>
+  <section class="container table-responsive">
+    <table class="table table-striped table-hover text-center">
+      <thead>
+        <tr>
+          <th scope="col">Fecha</th>
+          <th scope="col">Puesto</th>
+          <th scope="col">Empresa</th>
+          <th scope="col">+ Info</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">4/11/2021</th>
+          <td>Desarrollador Full Stack - Remoto</td>
+          <td>ADN - Recursos Humanos</td>
+          <td><a class="link-secondary" href="https://www.computrabajo.com.ar/ofertas-de-trabajo/oferta-de-trabajo-de-desarrollador-full-stack-remoto-en-recoleta-A3D7B7D51FABC73861373E686DCF3405" target="_blank">VER</td>
+        </tr>
+        <tr>
+          <th scope="row">4/11/2021</th>
+          <td>BairesDev - Mendoza</td>
+          <td>Junior Technical Interviewer</td>
+          <td><a class="link-secondary" href="https://www.computrabajo.com.ar/ofertas-de-trabajo/oferta-de-trabajo-de-junior-technical-interviewer-remote-work-ref-1048-tint-en-mendoza-323B854A3D5233A761373E686DCF3405" target="_blank">VER</a></td>
+        </tr>
+        <tr>
+          <th scope="row">3/11/2021</th>
+          <td>Desarrollador C/C++ Sr.</td>
+          <td>KaizenRH</td>
+          <td><a class="link-secondary" href="https://www.computrabajo.com.ar/ofertas-de-trabajo/oferta-de-trabajo-de-desarrollador-cc-sr--zona-mataderos-en-mataderos-304D47FC77AC1AD161373E686DCF3405" target="_blank">VER</a></td>
+        </tr>
+        <tr>
+          <th scope="row">3/11/2021</th>
+          <td>Soporte de Aplicaciones</td>
+          <td>Selecta</td>
+          <td><a class="link-secondary" href="https://www.zonajobs.com.ar/empleos/soporte-de-aplicaciones-importante-diario-digital-selecta-1928306.html?indiceAviso=0" target="_blank">VER</td>
+        </tr>
+        <tr>
+          <th scope="row">2/11/2021</th>
+          <td>Senior Web UI Developer - Remoto</td>
+          <td>Selecta</td>
+          <td><a class="link-secondary" href="hhttps://www.zonajobs.com.ar/empleos/senior-web-ui-developer-remote-argentina-selecta-1956203.html?indiceAviso=1" target="_blank">VER</td>
+        </tr>
+        <tr>
+          <th scope="row">2/11/2021</th>
+          <td>Desarrollador de Sistemas</td>
+          <td>Benmonz</td>
+          <td><a class="link-secondary" href="https://www.zonajobs.com.ar/empleos/desarrollador-de-sistemas-benmonz-gestion-empresarial-1955857.html?indiceAviso=4" target="_blank">VER</td>
+        </tr>
         </tbody>
       </table>
   </section>
     <!-- FIN TABLA TRABAJOS -------------------------------------------------------------------------------------------->
+    
     <div class="espacio"></div>
 
   <!-- FOOTER -------------------------------------------------------------------------------------------->

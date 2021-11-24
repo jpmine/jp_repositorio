@@ -51,12 +51,12 @@
   background-image: linear-gradient(to right, #eed91b, #c5b312); }
 
 .bg-header {
-  background-image: linear-gradient(to right, #eed91b, #bead10, #982F7C, #553388); }
+  background-image: linear-gradient(90deg, #241900 0%, rgba(233, 233, 74, 0.658999) 16%, rgba(209, 0, 255, 0.572164) 88%); }
 
 /* COLORES ---------------------------------------------------------------------------- */
 /* ESTILOS HEADER Y CARUSEL*/
 .grillaHeader {
-  background-image: linear-gradient(to right, #eed91b, #bead10, #982F7C, #553388);
+  background-image: linear-gradient(90deg, #241900 0%, rgba(233, 233, 74, 0.658999) 16%, rgba(209, 0, 255, 0.572164) 88%);
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   margin-top: 0.5em; }
@@ -131,7 +131,7 @@ body a {
     grid-area: box1;
     background-image: linear-gradient(to right, #e0ab1a, #b18713);
     width: auto;
-    height: 28em;
+    height: 22em;
     text-align: center;
     color: white;
     transition: 1s; }
@@ -141,7 +141,7 @@ body a {
     text-align: center;
     color: black; }
   .gridContenidosHome .gridContenidosHome__item1--img {
-    padding-top: 8em; }
+    padding-top: 6em; }
   .gridContenidosHome .gridContenidosHome__item1:hover {
     transform: scale(1.1, 1.1); }
   .gridContenidosHome .gridContenidosHome__item2 {
@@ -149,7 +149,7 @@ body a {
     background-color: #cf366aff;
     background-image: linear-gradient(to right, #cf366aff, #f56192);
     width: auto;
-    height: 28em;
+    height: 22em;
     text-align: center;
     color: white;
     transition: 1s; }
@@ -159,7 +159,7 @@ body a {
     text-align: center;
     color: black; }
   .gridContenidosHome .gridContenidosHome__item2--img {
-    padding-top: 8em; }
+    padding-top: 6em; }
   .gridContenidosHome .gridContenidosHome__item2:hover {
     transform: scale(1.1, 1.1); }
   .gridContenidosHome .gridContenidosHome__item3 {
@@ -167,7 +167,7 @@ body a {
     background-color: #3dcfe9;
     background-image: linear-gradient(to left, #3dcfe9, #16b1cc);
     width: auto;
-    height: 28em;
+    height: 22em;
     text-align: center;
     color: white;
     transition: 1s; }
@@ -177,14 +177,14 @@ body a {
     text-align: center;
     color: black; }
   .gridContenidosHome .gridContenidosHome__item3--img {
-    padding-top: 8em; }
+    padding-top: 6em; }
   .gridContenidosHome .gridContenidosHome__item3:hover {
     transform: scale(1.1, 1.1); }
   .gridContenidosHome .gridContenidosHome__item4 {
     grid-area: box4;
     background-image: linear-gradient(to left, #37f194, #2bc97a);
     width: auto;
-    height: 28em;
+    height: 22em;
     text-align: center;
     color: white;
     transition: 1s; }
@@ -194,7 +194,7 @@ body a {
     text-align: center;
     color: black; }
   .gridContenidosHome .gridContenidosHome__item4--img {
-    padding-top: 8em; }
+    padding-top: 6em; }
   .gridContenidosHome .gridContenidosHome__item4:hover {
     transform: scale(1.1, 1.1); }
 
@@ -206,7 +206,7 @@ body a {
     grid-area: box1;
     background-image: linear-gradient(to right, #e0ab1a, #b18713);
     width: auto;
-    height: 28em;
+    height: 22em;
     text-align: center;
     color: white;
     transition: 0.5s; }
@@ -216,14 +216,14 @@ body a {
     text-align: center;
     color: black; }
   .gridContenidosHome__item1--img {
-    padding-top: 8em; }
+    padding-top: 6em; }
   .gridContenidosHome__item1:hover {
     transform: scale(1.1, 1.1); }
   .gridContenidosHome__item2 {
     grid-area: box2;
     background-image: linear-gradient(to right, #cf366aff, #f56192);
     width: auto;
-    height: 28em;
+    height: 22em;
     text-align: center;
     color: white;
     transition: 1s; }
@@ -233,14 +233,14 @@ body a {
     text-align: center;
     color: black; }
   .gridContenidosHome__item2--img {
-    padding-top: 8em; }
+    padding-top: 6em; }
   .gridContenidosHome__item2:hover {
     transform: scale(1.1, 1.1); }
   .gridContenidosHome__item3 {
     grid-area: box3;
     background-image: linear-gradient(to left, #3dcfe9, #16b1cc);
     width: auto;
-    height: 28em;
+    height: 22em;
     text-align: center;
     color: white;
     transition: 1s; }
@@ -250,14 +250,14 @@ body a {
     text-align: center;
     color: black; }
   .gridContenidosHome__item3--img {
-    padding-top: 8em; }
+    padding-top: 6em; }
   .gridContenidosHome__item3:hover {
     transform: scale(1.1, 1.1); }
   .gridContenidosHome__item4 {
     grid-area: box4;
     background-image: linear-gradient(to left, #37f194, #2bc97a);
     width: auto;
-    height: 28em;
+    height: 22em;
     text-align: center;
     color: white;
     transition: 1s; }
@@ -267,7 +267,7 @@ body a {
     text-align: center;
     color: black; }
   .gridContenidosHome__item4--img {
-    padding-top: 8em; }
+    padding-top: 6em; }
   .gridContenidosHome__item4:hover {
     transform: scale(1.1, 1.1); } }
 

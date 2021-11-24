@@ -18,141 +18,139 @@
 
    <!--Header------------------------------------------------------------------------------------------>
 
-    <header class="container-fluid">
-      <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-      <nav class="navbar navbar-expand-lg navbar-light bg-naranjaGradient m-2">
-        <div class="container-fluid">
-          <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="115" height="auto" class="p-1"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <header class="container-fluid">
+    <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-blanco">
+      <div class="container-fluid">
+        <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="115" height="auto" class="p-1"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="../pages/noticias.html">Noticias</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <div class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Herramientas
-                  </div>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="../pages/cursos.html">Cursos</a></li>
-                    <li><a class="dropdown-item" href="../pages/descargas.html">Descargas</a></li>
-                  </ul>
-                  <li class="nav-item">
-                    <a class="nav-link" href="../pages/comunidad.html">Comunidad</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link menu-activo" href="../pages/contacto.html">Contacto</a>
-                    </li>
-                  </li>                
+                <a class="nav-link" href="../pages/noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Herramientas
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="../pages/cursos.html">Cursos</a></li>
+                  <li><a class="dropdown-item" href="../pages/descargas.html">Descargas</a></li>
                 </ul>
-            <form class="d-flex">
-              <input class="form-control me-2 c-blanco" type="search" placeholder="Quiero encontrar..." aria-label="Search">
-              <button class="btn btn-outline-warning bg-violeta c-negro" type="submit">Buscar</button>
-            </form>
-          </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="../pages/comunidad.html">Comunidad</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link menu-activo" href="../pages/contacto.html">Contacto</a>
+                  </li>
+                </li>                
+              </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 c-blanco" type="search" placeholder="Quiero encontrar..." aria-label="Search">
+            <button class="btn btn-outline-warning bg-violeta c-blanco" type="submit">Buscar</button>
+          </form>
         </div>
-      </nav>
-    <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
-    </header>  
+      </div>
+    </nav>
+  <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
+  </header>  
     <!--Fin Header------------------------------------------------------------------------------------------>
     <div class="espacioChico"></div>
 
-    <!-- IMAGEN Y TEXTO -------------------------------------------------------------------------------------------->
-    <section>
-      <div class="container-fluid">
-        <h1 class="h1NoticiasHome c-violeta text-center p-3 animacionTextoHome">PONETE EN <strong>CONTACTO</strong></h1>
-        <p class="fw-bold text-center bg-naranjaGradient c-negro p-1">Envianos tu comentario, sugerencia o saludo!</p>
-      </div>
-      
-    </section>
-
-    <!-- FIN IMAGEN Y TEXTO -------------------------------------------------------------------------------------------->
+  <!-- IMAGEN Y TEXTO -------------------------------------------------------------------------------------------->
+  <main>
+    <div class="container-fluid">
+      <h1 class="h1NoticiasHome c-violeta text-center p-3 animacionTextoHome">PONETE EN <strong>CONTACTO</strong></h1>
+      <p class="fw-bold text-center bg-naranjaGradient c-negro p-1">Envianos tu comentario, sugerencia o saludo!</p>
+    </div>    
+  </main>
+<!-- FIN IMAGEN Y TEXTO -------------------------------------------------------------------------------------------->
 
 
-    <!-- FORMULARIO DE CONTACTO -------------------------------------------------------------------------------------------->
-    <div class="container mb-5">
-    <form class="row g-3">
-      <div class="col-md-6">
-        <label for="inputNombre" class="form-label">Nombre</label>
-        <input type="text" class="form-control" id="inputNombre" placeholder="Ingresá tu nombre">
-      </div>
-      <div class="col-md-6">
-        <label for="inputApellido" class="form-label">Apellido</label>
-        <input type="text" class="form-control" id="inputApellido" placeholder="Ingresá tu apellido">
-      </div>
-      <div class="col-md-6">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresá tu correo electrónico">
-      </div>
-      <div class="col-md-6">
-        <label for="inputTel" class="form-label">Teléfono</label>
-        <input type="text" class="form-control" id="inputTel" placeholder="Dejanos un número de contacto">
-      </div>
-
-      <div class="col-md-6">
-        <label for="inputCity" class="form-label">Ciudad</label>
-        <input type="text" class="form-control" id="inputCity" placeholder="En qué ciudad / localidad vivís?">
-      </div>
-      <div class="col-md-4">
-        <label for="inputProvincia" class="form-label">Provincia</label>
-        <select id="inputProvincia" class="form-select">
-          <option selected>Seleccioná...</option>
-          <option>Buenos Aires</option>
-          <option>Capital Federal</option>
-          <option>Catamarca</option>
-          <option>Chaco</option>
-          <option>Chubut</option>
-          <option>Córdoba</option>
-          <option>Corrientes</option>
-          <option>Entre Ríos</option>
-          <option>Formosa</option>
-          <option>Jujuy</option>
-          <option>La Pampa</option>
-          <option>La Rioja</option>
-          <option>Mendoza</option>
-          <option>Misiones</option>
-          <option>Neuquén</option>
-          <option>Río Negro</option>
-          <option>Salta</option>
-          <option>San Juan</option>
-          <option>San Luis</option>
-          <option>Santa Cruz</option>
-          <option>Santa Fe</option>
-          <option>Santiago del Estero</option>
-          <option>Tierra del Fuego</option>
-          <option>Tucumán</option>
-
-        </select>
-      </div>
-      <div class="col-md-2">
-        <label for="inputCp" class="form-label">Código Postal</label>
-        <input type="text" class="form-control" id="inputCp">
-      </div>
-      <div class="col-md-6">
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="trabajoSistemas">
-          <label class="form-check-label" for="trabajoSistemas">Activá si ya trabajás en sistemas</label>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="form-check form-switch">
-          <input class="form-check-input" type="checkbox" role="switch" id="recibirNews" checked>
-          <label class="form-check-label" for="recibirNews">Quiero recibir noticias en mi mail</label>
-        </div>
-      </div>
-      <div class="d-grid gap-2">
-        <button type="submit" class="btn btn-primary btn-warning">Enviar</button>
-      </div>     
-    </form>
+<!-- FORMULARIO DE CONTACTO -------------------------------------------------------------------------------------------->
+<div class="container mb-5">
+<form class="row g-3">
+  <div class="col-md-6">
+    <label for="inputNombre" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="inputNombre" placeholder="Ingresá tu nombre">
   </div>
-  <div class="espacio"></div>
+  <div class="col-md-6">
+    <label for="inputApellido" class="form-label">Apellido</label>
+    <input type="text" class="form-control" id="inputApellido" placeholder="Ingresá tu apellido">
+  </div>
+  <div class="col-md-6">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4" placeholder="Ingresá tu correo electrónico">
+  </div>
+  <div class="col-md-6">
+    <label for="inputTel" class="form-label">Teléfono</label>
+    <input type="text" class="form-control" id="inputTel" placeholder="Dejanos un número de contacto">
+  </div>
 
-    <!-- FIN FORMULARIO DE CONTACTO -------------------------------------------------------------------------------------------->
+  <div class="col-md-6">
+    <label for="inputCity" class="form-label">Ciudad</label>
+    <input type="text" class="form-control" id="inputCity" placeholder="En qué ciudad / localidad vivís?">
+  </div>
+  <div class="col-md-4">
+    <label for="inputProvincia" class="form-label">Provincia</label>
+    <select id="inputProvincia" class="form-select">
+      <option selected>Seleccioná...</option>
+      <option>Buenos Aires</option>
+      <option>Capital Federal</option>
+      <option>Catamarca</option>
+      <option>Chaco</option>
+      <option>Chubut</option>
+      <option>Córdoba</option>
+      <option>Corrientes</option>
+      <option>Entre Ríos</option>
+      <option>Formosa</option>
+      <option>Jujuy</option>
+      <option>La Pampa</option>
+      <option>La Rioja</option>
+      <option>Mendoza</option>
+      <option>Misiones</option>
+      <option>Neuquén</option>
+      <option>Río Negro</option>
+      <option>Salta</option>
+      <option>San Juan</option>
+      <option>San Luis</option>
+      <option>Santa Cruz</option>
+      <option>Santa Fe</option>
+      <option>Santiago del Estero</option>
+      <option>Tierra del Fuego</option>
+      <option>Tucumán</option>
+
+    </select>
+  </div>
+  <div class="col-md-2">
+    <label for="inputCp" class="form-label">Código Postal</label>
+    <input type="text" class="form-control" id="inputCp">
+  </div>
+  <div class="col-md-6">
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="trabajoSistemas">
+      <label class="form-check-label" for="trabajoSistemas">Activá si ya trabajás en sistemas</label>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="form-check form-switch">
+      <input class="form-check-input" type="checkbox" role="switch" id="recibirNews" checked>
+      <label class="form-check-label" for="recibirNews">Quiero recibir noticias en mi mail</label>
+    </div>
+  </div>
+  <div class="d-grid gap-2">
+    <button type="submit" class="btn btn-primary btn-warning">Enviar</button>
+  </div>     
+</form>
+</div>
+<div class="espacio"></div>
+
+<!-- FIN FORMULARIO DE CONTACTO -------------------------------------------------------------------------------------------->
 
 
     <!-- FOOTER -------------------------------------------------------------------------------------------->
