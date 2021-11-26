@@ -106,7 +106,8 @@
 
  .comunidad__peliculas--activa{
     transition: 0.4s;
-     filter: brightness(75%);
+    filter: brightness(75%);
+    width: auto;
  }
 
  .comunidad__peliculas--activa:hover{
