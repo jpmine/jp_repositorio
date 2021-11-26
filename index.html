@@ -19,9 +19,9 @@
     
     <header class="container-fluid">
       <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-      <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2">
+      <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2 p-2">
         <div class="container-fluid">
-          <a href="index.html"><img src="./Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="115" height="auto" class="p-1"></a>
+          <a href="index.html"><img src="./Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="125" height="auto" class="p-1 animacionLogo"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -151,12 +151,12 @@
 
   <!-- SECCION ÚLTIMAS NOTICIAS -------------------------------------------------------------------------------------------->
   <section class="container p-3">
-    <div class="row">
-      <div class="col align-self-center border-5 border-start border-warning">
-        <h2 class="h1NoticiasHome c-violeta text-start animacionTextoHome">ÚLTIMAS <strong>NOTICIAS</strong></h2>
+    <div class="row gy-5">
+      <div class="col align-self-center">
+        <h2 class="h1NoticiasHome c-violeta text-start animacionTitulos">ÚLTIMAS <strong>NOTICIAS</strong></h2>
       </div>
       <div class="col">
-        <div class="card" style="width: 18rem;">
+        <div class="card noticias__glow" style="width: 18rem;">
           <img src="./Images/noticia-facebook.jpg" class="card-img-top img-fluid" alt="Facebook ahora es Meta">
             <div class="card-body">
               <h5 class="card-title fw-bold">Facebook ahora es Meta: un cambio de nombre para qué?</h5>
@@ -166,7 +166,7 @@
         </div>
       </div>
       <div class="col">
-        <div class="card" style="width: 18rem;">
+        <div class="card noticias__glow" style="width: 18rem;">
           <img src="./Images/stallman.jpg" class="card-img-top img-fluid" alt="Como sería el mundo sin Richard Stallman">
           <div class="card-body">
             <h5 class="card-title fw-bold">Cómo sería el mundo IT sin las ideas de Richard Stallman</h5>
@@ -183,13 +183,13 @@
             </form>
             <div class="espacioChico"></div>
           <div class="btn-group-vertical btn-group-lg">
-            <a href="./pages/descargas.html" class="btn btn-light bg-gris">DESCARGAS</a>
+            <a href="./pages/descargas.html" class="btn btn-light bg-gris animacionBotonesHome">DESCARGAS</a>
             <div class="espacioChico"></div>
-            <button type="button" class="btn btn-light bg-gris">INFORMACIÓN LABORAL</button>
+            <button type="button" class="btn btn-light bg-gris animacionBotonesHome">INFORMACIÓN LABORAL</button>
             <div class="espacioChico"></div>
-            <a href="./pages/cursos.html" class="btn btn-light bg-gris">CURSOS</a>
+            <a href="./pages/cursos.html" class="btn btn-light bg-gris animacionBotonesHome">CURSOS</a>
             <div class="espacioChico"></div>
-            <a href="./pages/contacto.html" class="btn btn-light bg-gris">CONTACTO</a>
+            <a href="./pages/contacto.html" class="btn btn-light bg-gris animacionBotonesHome">CONTACTO</a>
           </div>
           <div class="espacio"></div>          
         </aside>
@@ -209,8 +209,8 @@
       <div class="col">
         <img src="./Images/trabajo-busqueda.jpg" alt="Búsqueda de trabajo." class="img-fluid shadow p-3 mb-5 bg-body rounded">
       </div>
-      <div class="col align-self-center border-5 border-end border-danger">
-        <h2 class="h1NoticiasHome c-ocre text-end p-3 contactoFondo">BUSCÁS <strong>TRABAJO?</strong></h2>
+      <div class="col align-self-center">
+        <h2 class="h1NoticiasHome c-ocre text-end p-3 contactoFondo animacionTitulos">BUSCÁS <strong>TRABAJO?</strong></h2>
       </div>
     </div>
   </section>
@@ -272,29 +272,32 @@
   <!-- FOOTER -------------------------------------------------------------------------------------------->
   <footer class="container-fluid bg-violetaDark">
     <div class="container p-4">
-      <div class="row c-blanco">
-        <div class="col-12 col-lg-3">
+      <div class="row c-blanco gy-5">
+        <div class="col-12 col-lg-3 col-sm-12 text-center">
           <a href="index.html"><img src="./Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="150" height="auto" class="p-1"></a>
           <p class="fw-lighter">Amamos los sistemas</p>
         </div>
-        <div class="col-12 col-lg-3 offset-lg-1">
+        <div class="col-12 col-lg-3 offset-lg-1 col-sm-12 text-center">
           <h4>minuto IT</h4>
           <p>Av. Belgrano 1336</p>
           <p>info@minutoit.com</p>
+         
         </div>
-        <div class="col-12 col-lg-3">
-          <div class="col-12 offset-lg-1">
+        <div class="col-12 col-lg-3 col-sm-12">
+          <div class="col-12 col-sm-12 text-center offset-lg-4">
             <h4>Seguinos en las redes!</h4>
           </div>
-          <div class="col-12 fs-3 d-flex flex-row justify-content-around">
+          <div class="col-12 fs-3 d-flex flex-row justify-content-around offset-lg-4">
             <p class="bi-instagram"></p>
             <p class="bi-youtube"></p>
             <p class="bi-linkedin"></p>
-            <p class="bi-twitter"></p>
+            <p class="bi-twitter"></p>            
+          </div>
+          <div class="col-12 offset-lg-4">
+            <p class="text-center fst-italic c-naranja">Sitio desarrollado por JPM Web</p>
           </div>
         </div>
       </div>
-       <p class="text-center c-blanco mb-2 fw-lighter fst-italic c-naranja">Sitio desarrollado por JPM Web</p>
     </div>
   </footer>
   <!-- FIN FOOTER -------------------------------------------------------------------------------------------->

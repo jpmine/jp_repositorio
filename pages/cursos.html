@@ -19,9 +19,9 @@
   <!--Header------------------------------------------------------------------------------------------>
   <header class="container-fluid">
     <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-    <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2 p-2">
       <div class="container-fluid">
-        <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="115" height="auto" class="p-1"></a>
+        <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="125" height="auto" class="p-1 animacionLogo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -64,10 +64,11 @@
   <!--SECCIÓN CURSOS ------------------------------------------------------------------------------------------>
   <div class="container-fluid p-3">
     <div>
-      <h1 class="h1NoticiasHome c-violeta text-center p-3 animacionTextoHome">CURSOS <strong>LIBRES</strong></h1>
+      <h1 class="h1NoticiasHome c-violeta text-center p-3 animacionTextoHome mt-3 mb-3">CURSOS <strong>LIBRES</strong></h1>
       <p class="fw-bold text-center bg-naranjaGradient c-negro p-1">Compartimos cada semana cursos y material gratuito para seguir aprendiendo!</p>
     </div>
-  <div class="alert bg-violetaDark c-blanco" role="alert">
+
+  <div class="alert bg-violetaDark c-blanco mt-5 mb-5" role="alert">
     <h1 class="alert-heading">Apostá siempre a capacitarte!</h1>
     <p>Si querés trabajar en la industria de sistemas, la formación constante es tu mejor inversión. En la web hay miles de recursos gratuitos para aprender cada día nuevas cosas. Acá te dejamos un pequeño listado de cursos de lenguajes y herramientas que se utilizan mucho y que es importante que conozcas</p>
     <hr>
@@ -78,7 +79,7 @@
   <section class="container-fluid mt-2">
     <div class="row gy-5">
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card noticias__glow">
           <h5 class="card-header text-center bg-grisGradient">Node JS para principiantes</h5>
           <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -90,7 +91,7 @@
       </div>
 
       <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card noticias__glow">
           <h5 class="card-header text-center bg-grisGradient">Curso Angular 2021 desde 0</h5>
           <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -110,7 +111,7 @@
   <section class="container-fluid">
     <div class="row gy-5">
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card noticias__glow">
           <h5 class="card-header text-center bg-naranjaGradient">Aprendé Powershell</h5>
           <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -121,7 +122,7 @@
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card noticias__glow">
           <h5 class="card-header text-center bg-naranjaGradient">Curso PHP MySQL</h5>
           <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -132,7 +133,7 @@
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card noticias__glow">
           <h5 class="card-header text-center bg-naranjaGradient">JavaScript desde 0</h5>
           <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -151,9 +152,9 @@
   <div class="espacio"></div>
 
   <section class="container-fluid">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card noticias__glow">
           <h5 class="card-header text-center bg-ocreGradient">Introducción a React</h5>
           <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -164,7 +165,7 @@
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card noticias__glow">
           <h5 class="card-header text-center bg-ocreGradient">Programación con Python</h5>
           <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -175,7 +176,7 @@
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-        <div class="card">
+        <div class="card noticias__glow">
           <h5 class="card-header text-center bg-ocreGradient">C#</h5>
           <div class="card-body">
             <div class="ratio ratio-16x9">
@@ -193,29 +194,32 @@
 <!-- FOOTER -------------------------------------------------------------------------------------------->
 <footer class="container-fluid bg-violetaDark">
   <div class="container p-4">
-    <div class="row c-blanco">
-      <div class="col-12 col-lg-3">
+    <div class="row c-blanco gy-5">
+      <div class="col-12 col-lg-3 col-sm-12 text-center">
         <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="150" height="auto" class="p-1"></a>
         <p class="fw-lighter">Amamos los sistemas</p>
       </div>
-      <div class="col-12 col-lg-3 offset-lg-1">
+      <div class="col-12 col-lg-3 offset-lg-1 col-sm-12 text-center">
         <h4>minuto IT</h4>
         <p>Av. Belgrano 1336</p>
         <p>info@minutoit.com</p>
+       
       </div>
-      <div class="col-12 col-lg-3">
-        <div class="col-12 offset-lg-1">
+      <div class="col-12 col-lg-3 col-sm-12">
+        <div class="col-12 col-sm-12 text-center offset-lg-4">
           <h4>Seguinos en las redes!</h4>
         </div>
-        <div class="col-12 fs-3 d-flex flex-row justify-content-around">
+        <div class="col-12 fs-3 d-flex flex-row justify-content-around offset-lg-4">
           <p class="bi-instagram"></p>
           <p class="bi-youtube"></p>
           <p class="bi-linkedin"></p>
-          <p class="bi-twitter"></p>
+          <p class="bi-twitter"></p>            
+        </div>
+        <div class="col-12 offset-lg-4">
+          <p class="text-center fst-italic c-naranja">Sitio desarrollado por JPM Web</p>
         </div>
       </div>
     </div>
-     <p class="text-center c-blanco mb-2 fw-lighter fst-italic c-naranja">Sitio desarrollado por JPM Web</p>
   </div>
 </footer>
 <!-- FIN FOOTER -------------------------------------------------------------------------------------------->

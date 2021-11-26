@@ -19,9 +19,9 @@
 <!--Header------------------------------------------------------------------------------------------>
   <header class="container-fluid">
     <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-    <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2 p-2">
       <div class="container-fluid">
-        <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="115" height="auto" class="p-1"></a>
+        <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="125" height="auto" class="p-1 animacionLogo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,10 +63,10 @@
   <div class="espacioChico"></div>
 
   <article>
-    <article class="containerNoticias">
-      <div class="card mb-3">
+    <article class="row containerNoticias">
+      <div class="col-12 card-body-jp">
           <img src="../Images/noticia-facebook.jpg" class="card-img-top" alt="Facebook ahora es Meta: un cambio de nombre para enterrar la negativa realidad actual y viajar al Metaverso">
-          <div class="card-body-jp">
+          <div>
             <h1 class="card-title">Facebook ahora es Meta: un cambio de nombre para enterrar la negativa realidad actual y viajar al Metaverso</h1>
             <p class="card-text-jp"><strong>La noticia saltaba hace ahora una semana: Facebook estaba preparando un cambio de denominación. La ya histórica marca creada en sus años de universidad por Mark Zuckerberg iba a supeditarse a los nuevos planes de éste para crear un 'metaverso' basado en la realidad virtual y la realidad aumentada.</strong></p>
 
@@ -103,35 +103,38 @@
         </div>
   </article>
 
-   <!-- FOOTER -------------------------------------------------------------------------------------------->
-  <footer class="container-fluid bg-violetaDark">
-    <div class="container p-4">
-      <div class="row c-blanco">
-        <div class="col-12 col-lg-3">
-          <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="150" height="auto" class="p-1"></a>
-          <p class="fw-lighter">Amamos los sistemas</p>
+<!-- FOOTER -------------------------------------------------------------------------------------------->
+<footer class="container-fluid bg-violetaDark">
+  <div class="container p-4">
+    <div class="row c-blanco gy-5">
+      <div class="col-12 col-lg-3 col-sm-12 text-center">
+        <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="150" height="auto" class="p-1"></a>
+        <p class="fw-lighter">Amamos los sistemas</p>
+      </div>
+      <div class="col-12 col-lg-3 offset-lg-1 col-sm-12 text-center">
+        <h4>minuto IT</h4>
+        <p>Av. Belgrano 1336</p>
+        <p>info@minutoit.com</p>
+       
+      </div>
+      <div class="col-12 col-lg-3 col-sm-12">
+        <div class="col-12 col-sm-12 text-center offset-lg-4">
+          <h4>Seguinos en las redes!</h4>
         </div>
-        <div class="col-12 col-lg-3 offset-lg-1">
-          <h4>minuto IT</h4>
-          <p>Av. Belgrano 1336</p>
-          <p>info@minutoit.com</p>
+        <div class="col-12 fs-3 d-flex flex-row justify-content-around offset-lg-4">
+          <p class="bi-instagram"></p>
+          <p class="bi-youtube"></p>
+          <p class="bi-linkedin"></p>
+          <p class="bi-twitter"></p>            
         </div>
-        <div class="col-12 col-lg-3">
-          <div class="col-12 offset-lg-1">
-            <h4>Seguinos en las redes!</h4>
-          </div>
-          <div class="col-12 fs-3 d-flex flex-row justify-content-around">
-            <p class="bi-instagram"></p>
-            <p class="bi-youtube"></p>
-            <p class="bi-linkedin"></p>
-            <p class="bi-twitter"></p>
-          </div>
+        <div class="col-12 offset-lg-4">
+          <p class="text-center fst-italic c-naranja">Sitio desarrollado por JPM Web</p>
         </div>
       </div>
-       <p class="text-center c-blanco mb-2 fw-lighter fst-italic c-naranja">Sitio desarrollado por JPM Web</p>
     </div>
-  </footer>
-  <!-- FIN FOOTER -------------------------------------------------------------------------------------------->
+  </div>
+</footer>
+<!-- FIN FOOTER -------------------------------------------------------------------------------------------->
     <script src="../js/bootstrap.bundle.js"></script>    
 </body>
 </html>

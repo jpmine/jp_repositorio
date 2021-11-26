@@ -4,6 +4,8 @@
 @import "./modules/formulario";
 @import "./modules/boxcolorhome";
 @import "./modules/comunidad";
+@import "./modules/noticias";
+@import "./modules/animacionestextos";
 
 *{
     margin: 0px;
@@ -50,34 +52,7 @@ body{
     padding: 2em;
 }
 
-.card-body-jp{
-    font-size: 1em;
-    font-style: normal;
-    background-color: rgb(238, 238, 238);
-    padding: 4em;
-    
-}
 
-.card-body-jp h1{
-    font-size: 2em;
-    padding: 1em;
-    font-weight: bolder;
-    color: whitesmoke;
-    background-image: linear-gradient(to right, #553388, #421683);
-    margin-bottom: 1em;
-}
-
-.card-body-jp h2{
-    font-size: 2em;
-    font-weight: bolder;
-    color: #553388;
-    margin-top: 1em;
-    margin-bottom: 1em;
-}
-
-.card-text-jp{
-    padding: 0.5em;
-}
 
 .avisoDescargas{
     animation-duration: 3s;
@@ -98,18 +73,3 @@ body{
     height: 20em;
     text-align: center;
 }
-
-.animacionTextoCar {
-    position: relative;
-    animation-name: texto-home-car;
-    animation-duration: 1s; 
-    animation-delay: 1s;
-    transition: ease-in;
-  }
-  
-  @keyframes texto-home-car {
-    0%   {font-size: 0em; color: $cnaranja;}   
-    100% {font-size: 2em; color: $cblanco;}
-  }
-
-  

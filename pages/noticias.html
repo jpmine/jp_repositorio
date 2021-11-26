@@ -19,9 +19,9 @@
 <!--Header------------------------------------------------------------------------------------------>
   <header class="container-fluid">
     <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-    <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2">
+    <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2 p-2">
       <div class="container-fluid">
-        <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="115" height="auto" class="p-1"></a>
+        <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="125" height="auto" class="p-1 animacionLogo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -63,13 +63,13 @@
 
   <!--SECCION NOTICIAS ------------------------------------------------------------------------------------------>
   
-  <div class="container-fluid">
+  <div class="container-fluid p-3">
     <h1 class="h1NoticiasHome c-violeta text-center p-3 animacionTextoHome">ÚLTIMAS <strong>NOTICIAS</strong></h1>
     <p class="fw-bold text-center bg-naranjaGradient c-negro p-1">Novedades de tecnología, empresas, software y más!</p>
   </div>
-  <section class="container p-3 mt-5">
+  <section class="container p-3 mt-3 mb-3">
   <div class="card-group">
-    <div class="card p-1">
+    <div class="card p-1 noticias__glow">
       <img src="../Images/noticia-facebook.jpg" class="card-img-top" alt="Facebook ahora es Meta">
       <div class="card-body">
         <h5 class="card-title fw-bold">Facebook ahora es Meta: un cambio de nombre para enterrar la negativa realidad actual y viajar al Metaverso</h5>
@@ -79,7 +79,7 @@
         <a href="facebook-ahora-es-meta.html" class="btn bg-violeta c-blanco">Leer más</a>
       </div>
     </div>
-    <div class="card p-1">
+    <div class="card p-1 noticias__glow">
       <img src="../Images/stallman.jpg" class="card-img-top" alt="Cómo sería el mundo y la tecnología hoy en día sin el software libre y sin las ideas de Richard Stallman">
       <div class="card-body">
         <h5 class="card-title fw-bold">Cómo sería el mundo y la tecnología hoy en día sin el software libre y sin las ideas de Richard Stallman</h5>
@@ -89,7 +89,7 @@
         <a href="como-seria-mundo-tecnologia-hoy-dia-software-libre-ideas-richard-stallman.html" class="btn bg-violeta c-blanco">Leer más</a>
       </div>
     </div>
-    <div class="card p-1">
+    <div class="card p-1 noticias__glow">
       <img src="../Images/empresas.jpg" class="card-img-top" alt="Lo que deberías saber sobre la cultura de las empresas">
       <div class="card-body">
         <h5 class="card-title fw-bold">Lo que deberías saber sobre la cultura de las empresas – parte 1</h5>
@@ -98,13 +98,12 @@
       <div class="card-footer">
         <a href="#" class="btn bg-violeta c-blanco">Leer más</a>
       </div>
-    </div>
-    
+    </div>    
   </div>
 </section>
 <section class="container p-3 mt-5">
-  <div class="card-group">
-    <div class="card p-1">
+  <div class="card-group mb-5">
+    <div class="card p-1 noticias__glow--violeta">
       <img src="../Images/Linux.jpg" class="card-img-top" alt="Cuatro cosas de Linux que nos encantaría que Windows 11 copiase de una vez">
       <div class="card-body">
         <h5 class="card-title fw-bold">Cuatro cosas de Linux que nos encantaría que Windows 11 copiase de una vez</h5>
@@ -114,7 +113,7 @@
         <a href="#" class="btn bg-violeta c-blanco">Leer más</a>
       </div>
     </div>
-    <div class="card p-1">
+    <div class="card p-1 noticias__glow--violeta">
       <img src="../Images/programador.jpeg" class="card-img-top" alt="Sueldos en Argentina: los 12 lenguajes de programación mejores pagos">
       <div class="card-body">
         <h5 class="card-title fw-bold">Sueldos en Argentina: los 12 lenguajes de programación mejores pagos</h5>
@@ -124,7 +123,7 @@
         <a href="#" class="btn bg-violeta c-blanco">Leer más</a>
       </div>
     </div>
-    <div class="card p-1">
+    <div class="card p-1 noticias__glow--violeta">
       <img src="../Images/prueba.jpg" class="card-img-top" alt="lo que tenés que saber sobre el «período de prueba">
       <div class="card-body">
         <h5 class="card-title fw-bold">Informate: lo que tenés que saber sobre el "período de prueba"</h5>
@@ -139,32 +138,35 @@
 </section>
 <!--FIN SECCION NOTICIAS ------------------------------------------------------------------------------------------>
 
- <!-- FOOTER -------------------------------------------------------------------------------------------->
- <footer class="container-fluid bg-violetaDark">
+<!-- FOOTER -------------------------------------------------------------------------------------------->
+<footer class="container-fluid bg-violetaDark">
   <div class="container p-4">
-    <div class="row c-blanco">
-      <div class="col-12 col-lg-3">
+    <div class="row c-blanco gy-5">
+      <div class="col-12 col-lg-3 col-sm-12 text-center">
         <a href="../index.html"><img src="../Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="150" height="auto" class="p-1"></a>
         <p class="fw-lighter">Amamos los sistemas</p>
       </div>
-      <div class="col-12 col-lg-3 offset-lg-1">
+      <div class="col-12 col-lg-3 offset-lg-1 col-sm-12 text-center">
         <h4>minuto IT</h4>
         <p>Av. Belgrano 1336</p>
         <p>info@minutoit.com</p>
+       
       </div>
-      <div class="col-12 col-lg-3">
-        <div class="col-12 offset-lg-1">
+      <div class="col-12 col-lg-3 col-sm-12">
+        <div class="col-12 col-sm-12 text-center offset-lg-4">
           <h4>Seguinos en las redes!</h4>
         </div>
-        <div class="col-12 fs-3 d-flex flex-row justify-content-around">
+        <div class="col-12 fs-3 d-flex flex-row justify-content-around offset-lg-4">
           <p class="bi-instagram"></p>
           <p class="bi-youtube"></p>
           <p class="bi-linkedin"></p>
-          <p class="bi-twitter"></p>
+          <p class="bi-twitter"></p>            
+        </div>
+        <div class="col-12 offset-lg-4">
+          <p class="text-center fst-italic c-naranja">Sitio desarrollado por JPM Web</p>
         </div>
       </div>
     </div>
-     <p class="text-center c-blanco mb-2 fw-lighter fst-italic c-naranja">Sitio desarrollado por JPM Web</p>
   </div>
 </footer>
 <!-- FIN FOOTER -------------------------------------------------------------------------------------------->
