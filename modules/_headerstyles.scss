@@ -38,6 +38,10 @@
     border-bottom: solid 3px $cvioleta;
 }
 
+.h1Carrousel{
+    font-size: 6em;
+}
+
 .carousel-caption {
     position: absolute;
     right: 15%;
@@ -73,4 +77,140 @@
     border-radius: 8em;
 }
 
+@media only screen and (max-width: 1160px)
+{
+    .h1Carrousel{
+        font-size: 3em;
+    }
+    .carousel-caption {
+        right: 15%;
+        left: 15%;
+        top: 55%;
+        bottom: 5%;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: -3px 4px 5px #4B4B4B;
+        font-size: 1.2em;
+        transition: 2s;
+
+        h1{
+            font-size: 2.5em;
+            right: 15%;
+            left: 15%;
+            bottom: 35%;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: -3px 4px 5px #4B4B4B;
+            transition: 2s;
+        }
+
+        h2{
+            position: absolute;
+            right: 15%;
+            left: 15%;
+            bottom: 80%;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: -3px 4px 5px #4B4B4B;
+            font-size: 3em;
+            transition: 2s;
+        }
+        p{
+            right: 15%;
+            left: 15%;
+            top: 5%;
+            bottom: 5%;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            font-size: 1.5em;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 767px)
+{
+    .h1Carrousel{
+        font-size: 1em;
+    }
+    .carousel-caption {
+        right: 15%;
+        left: 15%;
+        top: 65%;
+        bottom: 5%;
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        text-shadow: -3px 4px 5px #4B4B4B;
+        font-size: 1.2em;
+        transition: 2s;
+
+        h1{
+            font-size: 1em;
+            right: 15%;
+            left: 15%;
+            bottom: 35%;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: -3px 4px 5px #4B4B4B;
+            transition: 2s;
+        }
+
+        h2{
+            position: absolute;
+            right: 15%;
+            left: 15%;
+            bottom: 80%;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            text-shadow: -3px 4px 5px #4B4B4B;
+            font-size: 1em;
+            transition: 2s;
+        }
+        p{
+            right: 15%;
+            left: 15%;
+            top: 5%;
+            bottom: 5%;
+            padding-top: 0.2rem;
+            padding-bottom: 0.2rem;
+            font-size: 0.6em;
+        }
+    }    
+}
+
+
+
+@media only screen and (min-width: 999px)
+{
+    .sloganMob
+    {
+        display: none;
+        font-size: 0.5em;
+        transition: 2s;
+    }
+
+    .sloganMob h3
+    {
+        font-weight: bold;
+        color: c-violeta;
+    }
+}
 /* FIN ESTILOS HEADER Y CARUSEL */
