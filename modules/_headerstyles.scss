@@ -1,5 +1,12 @@
 /* ESTILOS HEADER Y CARUSEL*/
 
+@media only screen and (min-width: 992px)
+{
+    .sloganMob{
+            display: none;
+    }
+}
+
 
 .grillaHeader{
     background-image: $bgheader;
@@ -20,10 +27,6 @@
         animation-name: animacion-header;    
     }
 }
-
-
-
-
 
 @keyframes animacion-header{
     0%{
@@ -197,20 +200,4 @@
 }
 
 
-
-@media only screen and (min-width: 999px)
-{
-    .sloganMob
-    {
-        display: none;
-        font-size: 0.5em;
-        transition: 2s;
-    }
-
-    .sloganMob h3
-    {
-        font-weight: bold;
-        color: c-violeta;
-    }
-}
 /* FIN ESTILOS HEADER Y CARUSEL */
