@@ -17,7 +17,7 @@ body a{
         height: $heightcolorboxMob;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .gridContenidosHome__item1--p{
@@ -44,7 +44,7 @@ body a{
         height: $heightcolorboxMob;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .gridContenidosHome__item2--p{
@@ -71,7 +71,7 @@ body a{
         height: $heightcolorboxMob;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .gridContenidosHome__item3--p{
@@ -97,7 +97,7 @@ body a{
         height: $heightcolorboxMob;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .gridContenidosHome__item4--p{
@@ -159,7 +159,7 @@ body a{
         height: $heightcolorbox;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .gridContenidosHome__item2--p{
@@ -184,7 +184,7 @@ body a{
         height: $heightcolorbox;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .gridContenidosHome__item3--p{
@@ -209,7 +209,7 @@ body a{
         height: $heightcolorbox;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
     
     .gridContenidosHome__item4--p{
@@ -267,7 +267,7 @@ body a{
         height: 30em;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .gridContenidosHome__item2--p{
@@ -292,7 +292,7 @@ body a{
         height: 30em;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
 
     .gridContenidosHome__item3--p{
@@ -317,7 +317,7 @@ body a{
         height: 30em;
         text-align: center;
         color: white;
-        transition: 1s;
+        transition: 0.3s;
     }
     
     .gridContenidosHome__item4--p{
@@ -333,6 +333,13 @@ body a{
     
     .gridContenidosHome__item4:hover{
         transform: scale(1.1,1.1);
+    }
+}
+
+@media only screen and (max-width: 449px)
+{
+    .hidetext{
+        display: none;
     }
 }
 /*  FIN CAJAS DE COLORES ------------------------------------------------------------------- */

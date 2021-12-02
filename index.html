@@ -15,54 +15,55 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <title>minuto IT: un sitio web para amantes de la tenconolgía, sistemas y la informática y sistemas</title>
 </head>
-<body>
+
+<body class="container-fluid">
     <!--Header------------------------------------------------------------------------------------------>
     
-    <header class="container-fluid">
-      <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
-      <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2 p-2">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div>
-          <a href="index.html"><img src="./Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="125" height="auto" class="p-1 animacionLogo"></a>
-          <p class="sloganMob fw-bold font-monospace text-center">minutoIT</p>
-        </div>
-          <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <header class="container-fluid">
+    <!--MENU NAVEGACION ------------------------------------------------------------------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-blanco border-bottom border-2 p-2">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+        <a href="index.html"><img src="./Images/logo-minuto-it-header-2.png" alt="Logo minuto IT" width="125" height="auto" class="p-1 animacionLogo"></a>
+        <p class="sloganMob fw-bold font-monospace text-center">minutoIT</p>
+      </div>
+        <div class="collapse navbar-collapse p-3" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link menu-activo" aria-current="page" href="index.html">Home</a>
+              </li>
               <li class="nav-item">
-                <a class="nav-link active menu-activo" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="./pages/noticias.html">Noticias</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <div class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Herramientas
-                  </div>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="./pages/cursos.html">Cursos</a></li>
-                    <li><a class="dropdown-item" href="./pages/descargas.html">Descargas</a></li>
-                  </ul>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./pages/comunidad.html">Comunidad</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="./pages/contacto.html">Contacto</a>
-                    </li>
-                  </li>                
+                <a class="nav-link" href="./pages/noticias.html">Noticias</a>
+              </li>
+              <li class="nav-item dropdown">
+                <div class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Herramientas
+                </div>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="./pages/cursos.html">Cursos</a></li>
+                  <li><a class="dropdown-item" href="./pages/descargas.html">Descargas</a></li>
                 </ul>
-            <form class="d-flex">
-              <input class="form-control me-2 c-blanco p-2" type="search" placeholder="Quiero encontrar..." aria-label="Search">
-              <button class="btn btn-outline-warning bg-violeta c-blanco" type="submit">Buscar</button>
-            </form>
-          </div>
+                <li class="nav-item">
+                  <a class="nav-link" href="./pages/comunidad.html">Comunidad</a>
+                  </li>
+                  <li class="nav-item">
+                  <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                  </li>
+                </li>                
+              </ul>
+          <form class="d-flex">
+            <input class="form-control me-2 c-blanco p-2" type="search" placeholder="Quiero encontrar..." aria-label="Search">
+            <button class="btn btn-outline-warning bg-violeta c-blanco" type="submit">Buscar</button>
+          </form>
         </div>
-      </nav>
-    <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
-    </header>  
-    <!--Fin Header------------------------------------------------------------------------------------------>
+      </div>
+    </nav>
+  <!--FIN MENU NAVEGACION ------------------------------------------------------------------------------------------>
+  </header>  
+  <!--Fin Header------------------------------------------------------------------------------------------>
     
     <!--CARROUSEL HOME ------------------------------------------------------------------------------------------>
     <main>
@@ -104,7 +105,7 @@
     </main>    
     <!--FIN CARRROUSEL HOME ------------------------------------------------------------------------------------------>
 
-  <div class="espacio"></div>
+  <div class="container-fluid espacio"></div>
 
   <!-- CAJAS DE COLORES -------------------------------------------------------------------------------------------->
   <section>
@@ -144,14 +145,14 @@
   </section>  
   <!-- FIN CAJAS DE COLORES -------------------------------------------------------------------------------------------->
 
-  <div class="espacio"></div>
+  <div class="container-fluid espacio"></div>
   <div class="container-fluid"><hr></div>
-  <div class="espacio"></div>
+  <div class="container-fluid espacio"></div>
 
   <!-- SECCION ÚLTIMAS NOTICIAS -------------------------------------------------------------------------------------------->
   <section class="container-fluid m-3 p-3">
     <div class="row gy-5">
-      <div class="col align-self-center">
+      <div class="col align-self-start">
         <h2 class="h1NoticiasHome c-violeta text-start animacionTitulos">ÚLTIMAS <strong>NOTICIAS</strong></h2>
       </div>
       <div class="col">
@@ -174,23 +175,23 @@
           </div>
         </div>
       </div>
-      <div class="col justify-content-center">
-        <aside class="container">
+      <div class="container-fluid col justify-content-center">
+        <aside class="container-fluid">
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
             <button class="btn btn-outline-secondary" type="submit">Ir</button>
             </form>
-            <div class="espacioChico"></div>
+            <div class="container-fluid espacioChico"></div>
           <div class="btn-group-vertical btn-group-lg">
             <a href="./pages/descargas.html" class="btn btn-light bg-gris animacionBotonesHome">DESCARGAS</a>
-            <div class="espacioChico"></div>
+            <div class="container-fluid espacioChico"></div>
             <a href="./pages/comunidad.html"<button type="button" class="btn btn-light bg-gris animacionBotonesHome">INFORMACIÓN LABORAL</button></a>
-            <div class="espacioChico"></div>
+            <div class="container-fluid espacioChico"></div>
             <a href="./pages/cursos.html" class="btn btn-light bg-gris animacionBotonesHome">CURSOS</a>
-            <div class="espacioChico"></div>
+            <div class="container-fluid espacioChico"></div>
             <a href="./pages/contacto.html" class="btn btn-light bg-gris animacionBotonesHome">CONTACTO</a>
           </div>
-          <div class="espacio"></div>          
+          <div class="container-fluid espacio"></div>          
         </aside>
       </div>
     </div>
@@ -198,9 +199,9 @@
   </section>
     <!-- FIN SECCION ÚLTIMAS NOTICIAS -------------------------------------------------------------------------------------------->
     
-  <div class="espacio"></div>
+  <div class="container-fluid espacio"></div>
   <div class="container-fluid"> <p class="placeholder-glow text-end"><span class="placeholder col-12 bg-warning placeholder-xs w-100"></span></p></div>
-  <div class="espacio"></div>
+  <div class="container-fluid espacio"></div>
 
   <!-- TABLA TRABAJOS -------------------------------------------------------------------------------------------->
   <section class="container-fluid m-1 p-3">
@@ -208,8 +209,12 @@
       <div class="col">
         <img src="./Images/trabajo-busqueda.jpg" alt="Búsqueda de trabajo." class="img-fluid shadow p-3 mb-5 bg-body rounded">
       </div>
-      <div class="col align-self-center">
+      <div class="col align-self-start">
         <h2 class="h1NoticiasHome c-ocre text-end p-3 contactoFondo animacionTitulos">BUSCÁS <strong>TRABAJO?</strong></h2>
+        <div class="container-fluid espacio"></div>
+        <div class="hidetext p-5">
+          <p class="text-end fs-5 text fw-bold">Encontrá en minuto IT las distinas posibilidades laborales en nuestro país, tanto como empleado bajo relación de dependencia, freelancer y más. Actualizamos la información cada día. Seguinos en las redes para más info!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -266,7 +271,7 @@
   </section>
     <!-- FIN TABLA TRABAJOS -------------------------------------------------------------------------------------------->
 
-    <div class="espacio"></div>
+    <div class="container-fluid espacio"></div>
 
   <!-- FOOTER -------------------------------------------------------------------------------------------->
   <footer class="container-fluid bg-violetaDark">

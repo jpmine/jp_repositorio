@@ -267,7 +267,7 @@ body a {
     height: 16em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome .gridContenidosHome__item1--p {
     font-size: 1.2em;
     padding: 2em;
@@ -286,7 +286,7 @@ body a {
     height: 16em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome .gridContenidosHome__item2--p {
     font-size: 1.2em;
     padding: 2em;
@@ -305,7 +305,7 @@ body a {
     height: 16em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome .gridContenidosHome__item3--p {
     font-size: 1.2em;
     padding: 2em;
@@ -323,7 +323,7 @@ body a {
     height: 16em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome .gridContenidosHome__item4--p {
     font-size: 1.2em;
     padding: 2em;
@@ -363,7 +363,7 @@ body a {
     height: 22em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome__item2--p {
     font-size: 1.2em;
     padding: 2em;
@@ -380,7 +380,7 @@ body a {
     height: 22em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome__item3--p {
     font-size: 1.2em;
     padding: 2em;
@@ -397,7 +397,7 @@ body a {
     height: 22em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome__item4--p {
     padding: 2em;
     font-size: 1.2em;
@@ -436,7 +436,7 @@ body a {
     height: 30em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome__item2--p {
     font-size: 1.2em;
     padding: 1em;
@@ -453,7 +453,7 @@ body a {
     height: 30em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome__item3--p {
     font-size: 1.2em;
     padding: 1em;
@@ -470,7 +470,7 @@ body a {
     height: 30em;
     text-align: center;
     color: white;
-    transition: 1s; }
+    transition: 0.3s; }
   .gridContenidosHome__item4--p {
     font-size: 1.2em;
     padding: 1em;
@@ -480,6 +480,10 @@ body a {
     padding-top: 7em; }
   .gridContenidosHome__item4:hover {
     transform: scale(1.1, 1.1); } }
+
+@media only screen and (max-width: 449px) {
+  .hidetext {
+    display: none; } }
 
 /*  FIN CAJAS DE COLORES ------------------------------------------------------------------- */
 .centrar-img {
