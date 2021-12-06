@@ -802,7 +802,8 @@ body a {
   padding: 0px; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  padding-top: 70px; }
 
 .espacio {
   margin-top: 2em;
