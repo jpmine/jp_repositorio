@@ -1,0 +1,1067 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicación Gremial AGC - Estrategia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* --- ESTILO GOTHAM / MARCA --- */
+        :root {
+            --primary-blue: #0080eb;
+            --white: #ffffff;
+            --dark-gray: #1f2937;
+            --light-gray: #f3f4f6;
+            --font-main: 'Montserrat', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--dark-gray);
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            overflow-x: hidden;
+        }
+
+        /* --- ANIMACIONES --- */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-60px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(60px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* --- TIPOGRAFÍA (GOTHAM) --- */
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            letter-spacing: -0.03em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-weight: 900;
+            font-size: clamp(40px, 8vw, 80px);
+            line-height: 0.95;
+            color: var(--primary-blue);
+        }
+
+        h2 {
+            font-weight: 900;
+            font-size: clamp(32px, 5vw, 56px);
+            color: var(--dark-gray);
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 4px;
+            background-color: var(--primary-blue);
+            animation: slideInLeft 0.6s ease-out;
+        }
+
+        h3 {
+            font-weight: 700;
+            font-size: clamp(20px, 3vw, 28px);
+            color: var(--primary-blue);
+            margin-bottom: 10px;
+        }
+
+        p,
+        li {
+            font-weight: 400;
+            font-size: clamp(16px, 2.5vw, 19px);
+            line-height: 1.6;
+        }
+
+        strong {
+            font-weight: 700;
+        }
+
+        /* --- SECCIONES FULL-SCREEN --- */
+        .slide {
+            min-height: 100vh;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 5%;
+            position: relative;
+        }
+
+        /* Slides que permiten scroll interno cuando el contenido es largo */
+        .slide.scrollable {
+            height: auto;
+            min-height: 100vh;
+            align-items: flex-start;
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        /* Slides que son estrictamente full-screen sin scroll */
+        .slide.fixed-height {
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slide-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 auto;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        /* --- HERO SECTION CON LOGO --- */
+        #hero {
+            background: linear-gradient(135deg, #0080eb 0%, #0066c0 100%);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .hero-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-logo img {
+            height: 60px;
+            width: auto;
+            filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.3));
+            transition: transform 0.3s ease;
+        }
+
+        .hero-logo img:hover {
+            transform: scale(1.05);
+        }
+
+        #hero h1 {
+            color: var(--white);
+            margin-bottom: 20px;
+            font-size: clamp(50px, 10vw, 100px);
+            animation: slideInLeft 0.8s ease-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        #hero .subtitle {
+            font-size: clamp(20px, 3vw, 30px);
+            font-weight: 400;
+            border-left: 4px solid var(--white);
+            padding-left: 20px;
+            line-height: 1.4;
+            animation: slideInRight 0.8s ease-out 0.2s both;
+            position: relative;
+            z-index: 1;
+        }
+
+        #hero p {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- SLIDES CON FONDOS ALTERNADOS --- */
+        .slide.white-bg {
+            background-color: var(--white);
+        }
+
+        .slide.gray-bg {
+            background-color: var(--light-gray);
+        }
+
+        .slide.blue-bg {
+            background: linear-gradient(135deg, #0080eb 0%, #0066c0 100%);
+            color: var(--white);
+        }
+
+        .slide.blue-bg h2 {
+            color: var(--white);
+        }
+
+        .slide.blue-bg h2::after {
+            background-color: var(--white);
+        }
+
+        .slide.blue-bg h3 {
+            color: var(--white);
+        }
+
+        /* --- GRID LAYOUTS --- */
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: start;
+            margin-top: 30px;
+        }
+
+        /* --- TILE STYLES CON ANIMACIONES --- */
+        .tile {
+            background-color: var(--light-gray);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 6px solid var(--primary-blue);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tile::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 128, 235, 0.1));
+            transition: width 0.4s ease;
+        }
+
+        .tile:hover::before {
+            width: 100%;
+        }
+
+        .tile.belief {
+            background-color: var(--white);
+            border-left: 6px solid var(--dark-gray);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .tile.belief h3 {
+            color: var(--dark-gray);
+        }
+
+        .tile.belief:hover {
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            transform: translateY(-8px);
+        }
+
+        .tile:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 15px 30px rgba(0, 128, 235, 0.25);
+        }
+
+        .tile .icon {
+            font-size: 36px;
+            color: var(--primary-blue);
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tile:hover .icon {
+            transform: scale(1.2) rotate(5deg);
+            color: var(--dark-gray);
+        }
+
+        .tile p {
+            font-size: 15px;
+            margin: 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tile h3 {
+            font-size: clamp(18px, 2.5vw, 24px);
+        }
+
+        /* --- ACCIONES PASADAS / LISTA DETALLADA --- */
+        .styled-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .styled-list li {
+            margin-bottom: 20px;
+            padding-left: 0;
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .styled-list li:hover {
+            padding-left: 10px;
+            border-bottom-color: var(--primary-blue);
+        }
+
+        .styled-list li:last-child {
+            border-bottom: none;
+        }
+
+        .styled-list li strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--dark-gray);
+            font-weight: 900;
+            text-transform: uppercase;
+            font-size: 17px;
+        }
+
+        .styled-list li p {
+            font-size: 15px;
+        }
+
+        .visual-placeholder {
+            min-height: 250px;
+            background: linear-gradient(135deg, var(--dark-gray) 0%, #374151 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 24px;
+            font-weight: 900;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .visual-placeholder::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .visual-placeholder i {
+            margin-bottom: 15px;
+            animation: pulse 2s ease-in-out infinite;
+            position: relative;
+            z-index: 1;
+        }
+
+        .visual-placeholder p {
+            position: relative;
+            z-index: 1;
+        }
+
+        .visual-placeholder:hover {
+            transform: scale(1.02);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* --- CHART (EFECTO MULTIPLICADOR) --- */
+        .chart-container {
+            margin-top: 20px;
+            padding: 15px 0;
+        }
+
+        .bar-wrapper {
+            margin-bottom: 20px;
+        }
+
+        .bar-label {
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        .bar-track {
+            background: var(--light-gray);
+            height: 35px;
+            width: 100%;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .bar-fill {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 15px;
+            font-weight: 900;
+            color: var(--white);
+            font-size: 16px;
+            transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border-radius: 4px;
+        }
+
+        #bar-fill-sindicato {
+            background: linear-gradient(90deg, var(--dark-gray) 0%, #374151 100%);
+            width: 15%;
+        }
+
+        #bar-fill-red {
+            background: linear-gradient(90deg, var(--primary-blue) 0%, #0066c0 100%);
+            width: 90%;
+        }
+
+        /* --- GOALS / METAS --- */
+        .goals-box {
+            background: linear-gradient(135deg, #0080eb 0%, #0066c0 100%);
+            padding: 35px;
+            color: var(--white);
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .goals-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            animation: float 10s ease-in-out infinite;
+        }
+
+        .goals-box:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(0, 128, 235, 0.4);
+        }
+
+        .goals-box h3 {
+            color: var(--white);
+            font-size: 28px;
+            font-weight: 900;
+            border-bottom: 2px solid var(--white);
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            text-transform: none;
+            position: relative;
+            z-index: 1;
+        }
+
+        .goals-box p {
+            color: var(--white);
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* --- NAVEGACIÓN ENTRE SLIDES --- */
+        .slide-nav {
+            position: fixed;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .slide-nav-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(0, 128, 235, 0.3);
+            border: 2px solid var(--primary-blue);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .slide-nav-dot:hover,
+        .slide-nav-dot.active {
+            background: var(--primary-blue);
+            transform: scale(1.3);
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero-logo img {
+                height: 45px;
+            }
+
+            .slide {
+                padding: 40px 5%;
+            }
+
+            .slide.scrollable {
+                padding-top: 60px;
+                padding-bottom: 60px;
+            }
+
+            .slide-nav {
+                right: 15px;
+            }
+
+            .slide-nav-dot {
+                width: 10px;
+                height: 10px;
+            }
+
+            .tile {
+                padding: 20px;
+            }
+
+            .tile .icon {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- JavaScript para la interacción y animación -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Animación de las barras del gráfico
+            const barSindicato = document.getElementById('bar-fill-sindicato');
+            const barRed = document.getElementById('bar-fill-red');
+
+            if (barSindicato && barRed) {
+                barSindicato.style.width = '0%';
+                barRed.style.width = '0%';
+
+                setTimeout(() => {
+                    barSindicato.style.width = '15%';
+                    barRed.style.width = '90%';
+                }, 500);
+            }
+
+            // 2. Navegación entre slides con dots
+            const slides = document.querySelectorAll('.slide');
+            const navDots = document.querySelectorAll('.slide-nav-dot');
+
+            // Actualizar dot activo al hacer scroll
+            const updateActiveDot = () => {
+                const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+                slides.forEach((slide, index) => {
+                    const slideTop = slide.offsetTop;
+                    const slideBottom = slideTop + slide.offsetHeight;
+
+                    if (scrollPosition >= slideTop && scrollPosition < slideBottom) {
+                        navDots.forEach(dot => dot.classList.remove('active'));
+                        navDots[index]?.classList.add('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', updateActiveDot);
+            updateActiveDot(); // Inicializar
+
+            // Click en dots para navegar
+            navDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    slides[index].scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // 3. Animaciones al entrar en viewport
+            const observerOptions = {
+                threshold: 0.3,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.querySelectorAll('.tile, .visual-placeholder').forEach((el, index) => {
+                            setTimeout(() => {
+                                el.style.opacity = '1';
+                                el.style.transform = 'translateY(0)';
+                            }, index * 100);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            slides.forEach(slide => {
+                slide.querySelectorAll('.tile, .visual-placeholder').forEach(el => {
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(30px)';
+                    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                });
+                observer.observe(slide);
+            });
+        });
+    </script>
+
+    <!-- Navegación lateral con dots -->
+    <div class="slide-nav">
+        <div class="slide-nav-dot active" title="Inicio"></div>
+        <div class="slide-nav-dot" title="Cambio de Época"></div>
+        <div class="slide-nav-dot" title="Objetivos"></div>
+        <div class="slide-nav-dot" title="Acciones"></div>
+        <div class="slide-nav-dot" title="Pilares"></div>
+        <div class="slide-nav-dot" title="Pilares (cont.)"></div>
+        <div class="slide-nav-dot" title="Rol del Compañero"></div>
+        <div class="slide-nav-dot" title="Acciones Concretas"></div>
+        <div class="slide-nav-dot" title="Cierre"></div>
+    </div>
+
+    <!-- SLIDE 1: HERO / APERTURA ESTRATÉGICA CON LOGO -->
+    <section id="hero" class="slide fixed-height">
+        <div class="slide-content">
+            <div class="hero-logo">
+                <img src="https://informaticos.ar/content/images/2021/10/Logo_T_Informaticos_blanco_transparencia.png"
+                    alt="Trabajadores Informáticos"
+                    onerror="this.onerror=null; this.src='https://placehold.co/200x60/0080eb/ffffff?text=TRABAJADORES+INFORMATICOS';">
+            </div>
+            <h1>Comunicación Gremial</h1>
+            <p class="subtitle">Guía estratégica para una Organización del Siglo XXI</p>
+            <p style="margin-top: 30px; font-size: 19px; font-weight: 700; color: var(--white);">
+                La comunicación dejó de ser un área "accesoria". Hoy es el corazón político, estratégico e identitario
+                de cualquier proyecto colectivo.
+                En un sector como informática, comunicar no es solo informar: es organizar, visibilizar, construir poder
+                y defender derechos.
+            </p>
+        </div>
+    </section>
+
+    <!-- SLIDE 2: CAMBIO DE ÉPOCA -->
+    <section class="slide white-bg fixed-height">
+        <div class="slide-content">
+            <h2>Cambio de Época</h2>
+            <div class="grid-2">
+                <div>
+                    <h3
+                        style="color: var(--dark-gray); border-bottom: 2px solid var(--primary-blue); display: inline-block; margin-bottom: 15px;">
+                        Del Sindicato Tradicional</h3>
+                    <p style="margin-bottom: 25px; color: #6b7280; font-weight: 700; font-size: 16px;">Analógico •
+                        Fábrica Física • Unidireccional</p>
+
+                    <h3>Al Sindicato Tecnológico</h3>
+                    <p style="font-size: 16px;">Los sindicatos nacieron en un mundo analógico. Hoy, el trabajo y la
+                        discusión pública pasan por lo digital.</p>
+                    <ul style="list-style: disc; padding-left: 20px; margin-top: 12px;">
+                        <li style="font-size: 16px;">Las noticias se consumen en redes.</li>
+                        <li style="font-size: 16px;">Las opiniones se forman en algoritmos.</li>
+                        <li style="font-size: 16px;">Las personas se organizan en canales digitales.</li>
+                    </ul>
+                    <p style="margin-top: 15px; font-size: 16px;">El sector IT no tiene tradición gremial, pero sí una
+                        cultura online. Nuestra comunicación debe hablar el idioma del trabajador informático.</p>
+                </div>
+                <div class="visual-placeholder" style="background: linear-gradient(135deg, #0080eb 0%, #0066c0 100%);">
+                    <i class="fa-solid fa-laptop-code" style="font-size: 70px;"></i>
+                    <p style="color: var(--white); margin: 0; font-size: 28px;">Cultura Online</p>
+                    <p style="color: var(--white); margin: 0; font-size: 15px; font-weight: 400; text-transform: none;">
+                        El sector es descentralizado e hiperconectado.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 3: OBJETIVOS ESTRATÉGICOS (SCROLLABLE) -->
+    <section class="slide gray-bg scrollable">
+        <div class="slide-content">
+            <h2>6 Objetivos Estratégicos</h2>
+            <p style="margin-bottom: 25px;">Estos objetivos guían cada pieza de contenido que producimos. La
+                comunicación es militancia.</p>
+            <div class="grid-3">
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-eye"></i></div>
+                    <h3>1. Visibilidad</h3>
+                    <p>Que más trabajadores y trabajadoras de informática sepan que existimos, quiénes somos y qué
+                        hacemos.</p>
+                </div>
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-bullhorn"></i></div>
+                    <h3>2. Legitimidad y Autoridad</h3>
+                    <p>Que el ecosistema IT nos reconozca como la voz de referencia en temas laborales y tecnológicos.
+                    </p>
+                </div>
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>3. Posicionar Liderazgo</h3>
+                    <p>Que cada intervención pública fortalezca la imagen institucional y construya liderazgo de la
+                        dirigencia.</p>
+                </div>
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-list-check"></i></div>
+                    <h3>4. Agenda Propia</h3>
+                    <p>No esperar a reaccionar: instalar temas, publicar datos, marcar posición y generar debate.</p>
+                </div>
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+                    <h3>5. Cohesión Interna</h3>
+                    <p>Que toda la organización (delegados, militancia, dirigencia) comparta los mismos mensajes y
+                        argumentos.</p>
+                </div>
+                <div class="tile">
+                    <div class="icon"><i class="fa-solid fa-arrow-trend-up"></i></div>
+                    <h3>6. Organización y Crecimiento</h3>
+                    <p>La comunicación es la puerta de entrada para nuevos afiliados, nuevos delegados y nuevos espacios
+                        de debate.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 4: ACCIONES PASADAS -->
+    <section class="slide white-bg fixed-height">
+        <div class="slide-content">
+            <h2>¿Qué hicimos hasta ahora?</h2>
+            <div class="grid-2">
+                <div class="styled-list">
+                    <p style="margin-bottom: 20px; font-size: 16px;">En estos meses transformamos nuestra presencia
+                        pública para alinearnos con la cultura digital del sector:</p>
+                    <ul>
+                        <li>
+                            <strong>Sitio Web Informaticos.ar</strong>
+                            <p>Notas semanales, investigación con el OTI, cobertura de actividades y contenido en tono
+                                gremial moderno.</p>
+                        </li>
+                        <li>
+                            <strong>Redes Sociales</strong>
+                            <p>Presencia constante y diaria. Tono adaptado a cada plataforma.</p>
+                        </li>
+                        <li>
+                            <strong>Informes del Observatorio (OTI)</strong>
+                            <p>Los datos duros nos permiten hablar con autoridad y profesionalismo.</p>
+                        </li>
+                        <li>
+                            <strong>Audiovisual (Reels y Clips)</strong>
+                            <p>Potenciamos la presencia pública con contenido visual efectivo.</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="visual-placeholder"
+                    style="background: linear-gradient(135deg, #0080eb 0%, #0066c0 100%); opacity: 0.95;">
+                    <i class="fa-solid fa-chart-pie" style="font-size: 70px;"></i>
+                    <p style="color: var(--white); margin: 0; font-size: 28px; text-align: center;">Ser referentes de
+                        nuestra industria</p>
+                    <p style="color: var(--white); margin: 0; font-size: 15px; font-weight: 400; text-transform: none;">
+                        Datos para discutir sentido y discurso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 5: LÓGICA ESTRATÉGICA / QUOTE -->
+    <section class="slide blue-bg fixed-height">
+        <div class="slide-content">
+            <h1
+                style="font-size: clamp(24px, 4vw, 40px); font-weight: 800; line-height: 120%; margin-bottom: 30px; text-align: center; color: var(--white);">
+                Nadie se afilia a lo que no conoce.<br>Nadie se organiza con quien no ve.<br>Nadie respeta a quien no
+                habla."</h1>
+            <p style="font-size: 24px; font-weight: 800; color: var(--white); text-align: center; margin-top: 40px;">Si
+                no hablamos nosotros, hablan otros:</p>
+            <p style="font-size: 19px; font-weight: 400; color: var(--white); text-align: center;"><br>Las cámaras
+                empresarias<br>Los medios<br>Los influencers IT</p>
+            <p style="font-size: 19px; font-weight: 800; color: var(--white); text-align: center; margin-top: 30px;">
+                Comunicar es disputar sentido, discurso y legitimidad en la arena pública.</p>
+        </div>
+    </section>
+
+    <!-- SLIDE 6: PILARES DE COMUNICACIÓN (SCROLLABLE) -->
+    <section class="slide white-bg scrollable">
+        <div class="slide-content">
+            <h2 style="color: var(--primary-blue);">Nuestros 4 Pilares de Comunicación</h2>
+            <div class="grid-2">
+                <div class="tile belief">
+                    <h3>1. Es Política</h3>
+                    <p>Cada tweet, cada nota, cada reel tiene una función organizativa clara. Nada es decorativo.</p>
+                </div>
+                <div class="tile belief">
+                    <h3>2. Es Militancia</h3>
+                    <p>Es un trabajo colectivo. Es construir comunidad y lazos, no solo limitarse a hacer posteos.</p>
+                </div>
+                <div class="tile belief">
+                    <h3>3. Es un Derecho</h3>
+                    <p>Informar es empoderar. Si un trabajador conoce sus derechos, puede defenderlos. Si no, está
+                        indefenso.</p>
+                </div>
+                <div class="tile belief">
+                    <h3>4. Es Moderna</h3>
+                    <p>Utilizamos datos, lenguaje claro, estética cuidada, cercanía, presencia multiformato y análisis
+                        real.</p>
+                </div>
+            </div>
+
+            <div class="grid-2" style="margin-top: 50px;">
+                <div>
+                    <h3
+                        style="color: var(--dark-gray); border-bottom: 2px solid var(--dark-gray); display: inline-block;">
+                        Hacia Dónde Vamos (5 Metas)</h3>
+                    <ul style="list-style: disc; padding-left: 20px; margin-top: 15px;">
+                        <li style="font-size: 16px;"><strong>Referente Indiscutido:</strong> Si se habla de trabajo IT,
+                            se consulta a la AGC.</li>
+                        <li style="font-size: 16px;"><strong>Comunidad Unificada:</strong> Donde la gente sienta: "Estos
+                            son mis compañeros."</li>
+                        <li style="font-size: 16px;"><strong>Identidad Digital Sólida:</strong> Una marca clara,
+                            confiable, moderna y profesional.</li>
+                        <li style="font-size: 16px;"><strong>Organización Real:</strong> Más delegados, más afiliados,
+                            más articulación.</li>
+                        <li style="font-size: 16px;"><strong>Ecosistema Factual:</strong> Basado en los datos del OTI.
+                        </li>
+                    </ul>
+                </div>
+                <div class="goals-box">
+                    <h3>PUENTE</h3>
+                    <p style="font-size: 16px; font-weight: 400; text-transform: none; margin-bottom: 15px;">
+                        Nuestra comunicación es el puente entre el sindicato y los trabajadores. Es la mano que va a
+                        buscar al que está solo programando.
+                    </p>
+                    <p style="font-size: 17px;">Por eso necesitamos que cada uno de ustedes sea parte.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 7: ROL DEL DELEGADO (SCROLLABLE) -->
+    <section class="slide gray-bg scrollable">
+        <div class="slide-content">
+            <h2 style="color: var(--primary-blue);">El Rol de Cada Compañero</h2>
+            <p style="margin-bottom: 30px; font-size: 16px;">No existe comunicación gremial sin la participación activa
+                de las personas que forman la organización.</p>
+
+            <div class="grid-2">
+                <div>
+                    <h3
+                        style="color: var(--dark-gray); border-bottom: 2px solid var(--primary-blue); display: inline-block; margin-bottom: 15px;">
+                        ¿Por qué es importante su participación?</h3>
+                    <ul class="styled-list" style="padding-left: 0;">
+                        <li>
+                            <strong>Voz en el Lugar de Trabajo</strong>
+                            <p>Los trabajadores escuchan más rápido a un compañero que a una cuenta institucional.</p>
+                        </li>
+                        <li>
+                            <strong>Expansión Exponencial</strong>
+                            <p>Cuando cada compañero comparte, el mensaje se amplifica exponencialmente.</p>
+
+                            <!-- Gráfico de Efecto Multiplicador -->
+                            <div class="chart-container">
+                                <div class="bar-wrapper">
+                                    <div class="bar-label">Post Sindicato (Base)</div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" id="bar-fill-sindicato">1.5k</div>
+                                    </div>
+                                </div>
+                                <div class="bar-wrapper">
+                                    <div class="bar-label" style="color: var(--primary-blue);">Sindicato + Red de
+                                        Delegados</div>
+                                    <div class="bar-track">
+                                        <div class="bar-fill" id="bar-fill-red">+40k PERSONAS</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    style="padding: 30px; background-color: var(--white); box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); border-radius: 8px;">
+                    <h3
+                        style="color: var(--primary-blue); border-bottom: 2px solid var(--dark-gray); display: inline-block; margin-bottom: 15px;">
+                        ¿Qué ganan personalmente?</h3>
+                    <ul class="styled-list" style="padding-left: 0;">
+                        <li>
+                            <strong>Estar Empoderados</strong>
+                            <p>Quien conoce sus derechos, los defiende.</p>
+                        </li>
+                        <li>
+                            <strong>Herramientas para su Trabajo</strong>
+                            <p>Nuestras notas, informes (OTI), hilos y comunicados son insumos para ustedes.</p>
+                        </li>
+                        <li>
+                            <strong>Construir Liderazgo</strong>
+                            <p>Quien comparte, explica, informa y ayuda a otros... lidera.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 8: ACCIONES CONCRETAS (SCROLLABLE) -->
+    <section class="slide white-bg scrollable">
+        <div class="slide-content">
+            <h2>Acciones Concretas y Guía de Trabajo</h2>
+
+            <h3 style="color: var(--dark-gray); margin-bottom: 20px;">¿Qué pueden hacer ustedes desde su lugar?</h3>
+            <div class="grid-3">
+                <div class="tile" style="border-left: 6px solid var(--dark-gray);">
+                    <div class="icon"><i class="fa-solid fa-share-nodes"></i></div>
+                    <h3>1. Compartir y Comentar</h3>
+                    <p>En Instagram, X, LinkedIn. 10 segundos tuyos multiplican el alcance por miles.</p>
+                </div>
+                <div class="tile" style="border-left: 6px solid var(--dark-gray);">
+                    <div class="icon"><i class="fa-solid fa-walkie-talkie"></i></div>
+                    <h3>2. Enviar Información</h3>
+                    <p>Problemas, logros, despidos, tercerización, novedades. Ustedes son los ojos y oídos.</p>
+                </div>
+                <div class="tile" style="border-left: 6px solid var(--dark-gray);">
+                    <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>3. Proponer Ideas</h3>
+                    <p>Ustedes están en el día a día. Nadie mejor para saber qué preocupa o qué se necesita.</p>
+                </div>
+                <div class="tile" style="border-left: 6px solid var(--dark-gray);">
+                    <div class="icon"><i class="fa-solid fa-user-plus"></i></div>
+                    <h3>4. Sumar a la Comunidad</h3>
+                    <p>Reenviar notas, newsletters, y herramientas como el SIM a compañeros no afiliados.</p>
+                </div>
+                <div class="tile" style="border-left: 6px solid var(--dark-gray);">
+                    <div class="icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <h3>5. Usar la Comunicación</h3>
+                    <p>Usar nuestras notas para abrir discusiones. Compartir datos del OTI antes de reclamar.</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 40px; padding: 30px; background-color: var(--light-gray); border-radius: 8px;">
+                <h3
+                    style="color: var(--dark-gray); border-bottom: 2px solid var(--primary-blue); display: inline-block;">
+                    Guía Rápida: ¿Esto es Comunicable?</h3>
+                <p style="font-size: 16px; margin-top: 15px;">Para pensar la comunicación de sus delegaciones, hágase
+                    estas preguntas:</p>
+                <ul style="list-style: none; padding-left: 0;">
+                    <li style="font-weight: 700; margin-top: 10px; font-size: 15px;"><i class="fa-solid fa-circle-check"
+                            style="color: var(--primary-blue); margin-right: 10px;"></i> ¿Afecta a trabajadores?</li>
+                    <li style="font-weight: 700; margin-top: 10px; font-size: 15px;"><i class="fa-solid fa-circle-check"
+                            style="color: var(--primary-blue); margin-right: 10px;"></i> ¿Puede servirle o enseñarle
+                        algo a otros compañeros?</li>
+                    <li style="font-weight: 700; margin-top: 10px; font-size: 15px;"><i class="fa-solid fa-circle-check"
+                            style="color: var(--primary-blue); margin-right: 10px;"></i> ¿Cuenta una historia relevante
+                        del sindicato?</li>
+                    <li style="font-weight: 700; margin-top: 10px; font-size: 15px;"><i class="fa-solid fa-circle-check"
+                            style="color: var(--primary-blue); margin-right: 10px;"></i> ¿Puede ayudar a visibilizar un
+                        problema o un logro?</li>
+                </ul>
+                <p style="margin-top: 20px; font-style: italic; font-size: 15px;">Si la respuesta es "sí", envíen la
+                    información cruda y nosotros la transformamos en la pieza adecuada.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDE 9: FOOTER / CIERRE FINAL -->
+    <section class="slide blue-bg fixed-height">
+        <div class="slide-content" style="text-align: center;">
+            <p style="color: var(--white); font-size: 22px; font-weight: 700; margin-top: 30px;">
+                La comunicación no es una tarea del equipo de comunicación.
+            </p>
+            <p
+                style="color: var(--white); font-weight: 900; font-size: 32px; margin-top: 10px; margin-bottom: 30px; text-transform: uppercase;">
+                Es una tarea de todos los trabajadores organizados.
+            </p>
+            <p style="color: rgba(255,255,255,0.8); font-size: 19px; font-style: italic;">
+                Cada uno de ustedes es un nodo de esta red. Y cuanto más fuerte es cada nodo, más fuerte es el
+                sindicato.
+            </p>
+            <p style="margin-top: 50px; font-size: 14px; color: var(--white);">Asociación Gremial de Computación (AGC)
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
