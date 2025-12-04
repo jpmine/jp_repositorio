@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunicación Gremial AGC - Estrategia</title>
 
-    <!-- SEO Meta Tags -->
     <meta name="description"
         content="Guía estratégica de Comunicación Gremial para una Organización del Siglo XXI - Asociación Gremial de Computación (AGC)">
     <meta name="keywords" content="AGC, Comunicación Gremial, Trabajadores Informáticos, Sindicato IT, Organización">
     <meta name="author" content="Asociación Gremial de Computación (AGC)">
 
-    <!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="Comunicación Gremial AGC - Estrategia">
     <meta property="og:description"
@@ -22,7 +20,6 @@
     <meta property="og:url" content="https://informaticos.ar">
     <meta property="og:site_name" content="AGC - Trabajadores Informáticos">
 
-    <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Comunicación Gremial AGC - Estrategia">
     <meta name="twitter:description" content="Guía estratégica para una Organización del Siglo XXI">
@@ -433,6 +430,42 @@
         .styled-list li p {
             font-size: 15px;
         }
+        /* Estilos específicos para la nueva lista de preguntas */
+        .question-group {
+            margin-bottom: 40px;
+            padding: 25px;
+            background-color: var(--light-gray);
+            border-radius: 8px;
+            border-left: 8px solid var(--primary-blue);
+        }
+        .question-group h3 {
+            color: var(--dark-gray);
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--dark-gray);
+            padding-bottom: 8px;
+        }
+        .question-group ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .question-group li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 12px;
+            font-size: 16px;
+            line-height: 1.4;
+            border: none;
+            padding-bottom: 0;
+        }
+        .question-group li::before {
+            content: '•';
+            color: var(--primary-blue);
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
 
         .visual-placeholder {
             min-height: 250px;
@@ -794,6 +827,7 @@
                 min-height: 100vh;
                 overflow: visible !important;
             }
+
             /* Logo AGC en slide final - responsive */
             .slide.blue-bg img[alt="Logo AGC"] {
                 height: 120px !important;
@@ -806,96 +840,20 @@
 
 <body>
 
-    <!-- JavaScript para la interacción y animación -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // 1. Animación de las barras del gráfico
-            const barSindicato = document.getElementById('bar-fill-sindicato');
-            const barRed = document.getElementById('bar-fill-red');
-
-            if (barSindicato && barRed) {
-                barSindicato.style.width = '0%';
-                barRed.style.width = '0%';
-
-                setTimeout(() => {
-                    barSindicato.style.width = '15%';
-                    barRed.style.width = '90%';
-                }, 500);
-            }
-
-            // 2. Navegación entre slides con dots
-            const slides = document.querySelectorAll('.slide');
-            const navDots = document.querySelectorAll('.slide-nav-dot');
-
-            // Actualizar dot activo al hacer scroll
-            const updateActiveDot = () => {
-                const scrollPosition = window.scrollY + window.innerHeight / 2;
-
-                slides.forEach((slide, index) => {
-                    const slideTop = slide.offsetTop;
-                    const slideBottom = slideTop + slide.offsetHeight;
-
-                    if (scrollPosition >= slideTop && scrollPosition < slideBottom) {
-                        navDots.forEach(dot => dot.classList.remove('active'));
-                        navDots[index]?.classList.add('active');
-                    }
-                });
-            };
-
-            window.addEventListener('scroll', updateActiveDot);
-            updateActiveDot(); // Inicializar
-
-            // Click en dots para navegar
-            navDots.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    slides[index].scrollIntoView({ behavior: 'smooth' });
-                });
-            });
-
-            // 3. Animaciones al entrar en viewport
-            const observerOptions = {
-                threshold: 0.3,
-                rootMargin: '0px'
-            };
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.querySelectorAll('.tile, .visual-placeholder').forEach((el, index) => {
-                            setTimeout(() => {
-                                el.style.opacity = '1';
-                                el.style.transform = 'translateY(0)';
-                            }, index * 100);
-                        });
-                    }
-                });
-            }, observerOptions);
-
-            slides.forEach(slide => {
-                slide.querySelectorAll('.tile, .visual-placeholder').forEach(el => {
-                    el.style.opacity = '0';
-                    el.style.transform = 'translateY(30px)';
-                    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-                });
-                observer.observe(slide);
-            });
-        });
-    </script>
-
-    <!-- Navegación lateral con dots -->
     <div class="slide-nav">
-        <div class="slide-nav-dot active" title="Inicio"></div>
-        <div class="slide-nav-dot" title="Cambio de Época"></div>
+        <div class="slide-nav-dot active" title="Apertura"></div>
+        <div class="slide-nav-dot" title="Sondeo Interno"></div>
+        <div class="slide-nav-dot" title="Contexto y Desafío"></div>
         <div class="slide-nav-dot" title="Objetivos"></div>
-        <div class="slide-nav-dot" title="Acciones"></div>
-        <div class="slide-nav-dot" title="Pilares"></div>
-        <div class="slide-nav-dot" title="Pilares (cont.)"></div>
+        <div class="slide-nav-dot" title="Acciones Pasadas"></div>
+        <div class="slide-nav-dot" title="Axioma Gremial"></div>
+        <div class="slide-nav-dot" title="Pilares de Comunicación"></div>
         <div class="slide-nav-dot" title="Rol del Compañero"></div>
         <div class="slide-nav-dot" title="Acciones Concretas"></div>
+        <div class="slide-nav-dot" title="Taller de Profundización"></div>
         <div class="slide-nav-dot" title="Cierre"></div>
     </div>
 
-    <!-- SLIDE 1: HERO / APERTURA ESTRATÉGICA CON LOGO -->
     <section id="hero" class="slide fixed-height">
         <div class="slide-content">
             <div class="hero-logo">
@@ -914,8 +872,42 @@
         </div>
     </section>
 
-    <!-- SLIDE 2: CAMBIO DE ÉPOCA -->
-    <section class="slide white-bg fixed-height">
+    <section id="sondeo-interno" class="slide white-bg fixed-height">
+        <div class="slide-content" style="max-width: 800px; text-align: center;">
+            <h2 style="color: var(--dark-gray);">Empecemos por ustedes</h2>
+            <p style="font-size: 20px; font-weight: 700; margin-bottom: 40px;">Un diagnóstico rápido sobre cómo sienten
+                nuestra red de comunicación hoy.</p>
+
+            <div class="grid-3" style="gap: 20px; margin-top: 0;">
+                <div class="tile belief"
+                    style="border-left: 6px solid var(--primary-blue); background-color: var(--light-gray); text-align: left;">
+                    <div class="icon" style="font-size: 28px;"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h3>Pregunta 1: Utilidad</h3>
+                    <p style="font-weight: 700; color: var(--dark-gray); margin-bottom: 5px;">¿Cuál fue la última
+                        comunicación que recibieron que realmente les sirvió?</p>
+                </div>
+                <div class="tile belief"
+                    style="border-left: 6px solid var(--primary-blue); background-color: var(--light-gray); text-align: left;">
+                    <div class="icon" style="font-size: 28px;"><i class="fa-solid fa-comment-dots"></i></div>
+                    <h3>Pregunta 2: Percepción</h3>
+                    <p style="font-weight: 700; color: var(--dark-gray); margin-bottom: 5px;">Si tuvieran que ponerle un
+                        título a cómo sienten la comunicación interna hoy, ¿cuál sería?</p>
+                </div>
+                <div class="tile belief"
+                    style="border-left: 6px solid var(--primary-blue); background-color: var(--light-gray); text-align: left;">
+                    <div class="icon" style="font-size: 28px;"><i class="fa-solid fa-list-ul"></i></div>
+                    <h3>Pregunta 3: Formato</h3>
+                    <p style="font-weight: 700; color: var(--dark-gray); margin-bottom: 5px;">¿Qué preferirían recibir:
+                        más mensajes breves o menos mensajes pero más completos?</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 30px; font-size: 16px; font-style: italic;">(Espacio para discusión e interacción)</p>
+
+        </div>
+    </section>
+
+    <section id="contexto" class="slide gray-bg fixed-height">
         <div class="slide-content">
             <h2>Cambio de Época</h2>
             <div class="grid-2">
@@ -947,8 +939,7 @@
         </div>
     </section>
 
-    <!-- SLIDE 3: OBJETIVOS ESTRATÉGICOS (SCROLLABLE) -->
-    <section class="slide gray-bg scrollable">
+    <section id="objetivos" class="slide white-bg scrollable">
         <div class="slide-content">
             <h2>Objetivos Estratégicos</h2>
             <h2>COMUNICAR CREA ORGANIZACIÓN</h2>
@@ -994,8 +985,7 @@
         </div>
     </section>
 
-    <!-- SLIDE 4: ACCIONES PASADAS -->
-    <section class="slide white-bg fixed-height">
+    <section id="acciones-pasadas" class="slide gray-bg fixed-height">
         <div class="slide-content">
             <h2>¿Qué hicimos hasta ahora?</h2>
             <div class="grid-2">
@@ -1034,9 +1024,8 @@
         </div>
     </section>
 
-    <!-- SLIDE 5: LÓGICA ESTRATÉGICA / QUOTE -->
-    <section class="slide blue-bg fixed-height">
-        <div class="slide-content">
+    <section id="axioma" class="slide blue-bg fixed-height">
+        <div class="slide-content" style="max-width: 900px;">
             <h1
                 style="font-size: clamp(24px, 4vw, 40px); font-weight: 800; line-height: 120%; margin-bottom: 30px; text-align: center; color: var(--white);">
                 Nadie se afilia a lo que no conoce.<br>Nadie se organiza con quien no ve.<br>Nadie respeta a quien no
@@ -1045,13 +1034,13 @@
                 no hablamos nosotros, hablan otros:</p>
             <p style="font-size: 19px; font-weight: 400; color: var(--white); text-align: center;"><br>Las cámaras
                 empresarias<br>Los medios<br>Los influencers IT</p>
-            <p style="font-size: 19px; font-weight: 800; color: var(--white); text-align: center; margin-top: 30px;">
+            <p
+                style="font-size: 19px; font-weight: 800; color: var(--white); text-align: center; margin-top: 30px; border-top: 2px solid var(--white); padding-top: 15px;">
                 Comunicar es disputar sentido, discurso y legitimidad en la arena pública.</p>
         </div>
     </section>
 
-    <!-- SLIDE 6: PILARES DE COMUNICACIÓN (SCROLLABLE) -->
-    <section class="slide white-bg scrollable">
+    <section id="pilares" class="slide white-bg scrollable">
         <div class="slide-content">
             <h2 style="color: var(--primary-blue);">Nuestros Pilares de Comunicación</h2>
             <div class="grid-2">
@@ -1105,8 +1094,7 @@
         </div>
     </section>
 
-    <!-- SLIDE 7: ROL DEL DELEGADO (SCROLLABLE) -->
-    <section class="slide gray-bg scrollable">
+    <section id="rol-companero" class="slide gray-bg scrollable">
         <div class="slide-content">
             <h2 style="color: var(--primary-blue);">El Rol de Cada Compañero</h2>
             <p style="margin-bottom: 30px; font-size: 16px;">No existe comunicación gremial sin la participación activa
@@ -1126,7 +1114,6 @@
                             <strong>Expansión Exponencial</strong>
                             <p>Cuando cada compañero comparte, el mensaje se amplifica exponencialmente.</p>
 
-                            <!-- Gráfico de Efecto Multiplicador -->
                             <div class="chart-container">
                                 <div class="bar-wrapper">
                                     <div class="bar-label">Post Sindicato (Base)</div>
@@ -1170,8 +1157,7 @@
         </div>
     </section>
 
-    <!-- SLIDE 8: ACCIONES CONCRETAS (SCROLLABLE) -->
-    <section class="slide white-bg scrollable">
+    <section id="acciones-concretas" class="slide white-bg scrollable">
         <div class="slide-content">
             <h2>Acciones Concretas y Guía de Trabajo</h2>
 
@@ -1229,10 +1215,73 @@
         </div>
     </section>
 
-    <!-- SLIDE 9: FOOTER / CIERRE FINAL -->
-    <section class="slide blue-bg fixed-height">
+    <section id="taller-profundizacion" class="slide gray-bg scrollable">
+        <div class="slide-content">
+            <h2 style="color: var(--dark-gray);">Taller de Profundización y Diagnóstico Colectivo</h2>
+            <p style="margin-bottom: 30px;">Preguntas para abrir la discusión sobre el estado actual y las
+                necesidades futuras de nuestra comunicación interna y externa.</p>
+
+            <div class="question-group">
+                <h3>1. Recepción y Claridad de la Información</h3>
+                <ul>
+                    <li>¿Les llega clara y a tiempo la información que enviamos?</li>
+                    <li>¿Sienten que entienden lo que está pasando en el sindicato cuando reciben las novedades?</li>
+                    <li>¿Qué tipo de contenidos internos les resultan más útiles o necesarios?</li>
+                </ul>
+            </div>
+
+            <div class="question-group">
+                <h3>2. Formato y Canales</h3>
+                <ul>
+                    <li>¿El canal principal de comunicación interna (WhatsApp) les resulta cómodo? ¿Qué mejorarían?</li>
+                    <li>¿Preferirían recibir también contenido por alguna otra herramienta?</li>
+                    <li>¿El formato de los textos les resulta claro? ¿Demasiado largo, demasiado corto?</li>
+                </ul>
+            </div>
+
+            <div class="question-group">
+                <h3>3. Participación y Difusión</h3>
+                <ul>
+                    <li>Cuando reciben algo para difundir, ¿les resulta fácil compartirlo? ¿Qué lo facilitaría?</li>
+                    <li>¿Qué cosas sienten que funcionan bien cuando las comparten con otros compañeros?</li>
+                    <li>¿Qué cosas no funcionan o no generan interés?</li>
+                    <li>¿Qué frena o dificulta que compartan nuestras publicaciones en sus redes o grupos?</li>
+                </ul>
+            </div>
+
+            <div class="question-group">
+                <h3>4. Necesidades de Comunicación en sus Territorios</h3>
+                <ul>
+                    <li>En sus delegaciones/localidades, ¿qué temas creen que deberían comunicarse más?</li>
+                    <li>¿Qué problemáticas o noticias del territorio creen que podríamos transformar en contenido?</li>
+                    <li>¿Alguna vez necesitaron comunicar algo y les faltó material o apoyo? ¿Cuál?</li>
+                </ul>
+            </div>
+
+            <div class="question-group">
+                <h3>5. Evaluación de la Identidad Comunicacional del Sindicato</h3>
+                <ul>
+                    <li>¿Cómo perciben el estilo de comunicación actual del sindicato? ¿Cercano? ¿Técnico? ¿Claro? ¿Excesivamente complejo?</li>
+                    <li>¿Sienten que la comunicación refleja lo que somos como organización?</li>
+                    <li>¿Qué creen que podríamos hacer mejor para mostrar fortaleza, unidad y claridad?</li>
+                </ul>
+            </div>
+
+            <div class="question-group">
+                <h3>6. Ideas y Propuestas</h3>
+                <ul>
+                    <li>Si tuvieran que proponer un contenido nuevo que hoy no estamos haciendo, ¿cuál sería?</li>
+                    <li>¿Qué tipo de material les gustaría tener para explicar el sindicato a otros compañeros?</li>
+                    <li>¿Qué sección o idea imaginan con que tengamos en nuestra comunicación?</li>
+                </ul>
+            </div>
+
+            <p style="margin-top: 30px; font-size: 16px; font-style: italic; text-align: center;">(Tiempo para discusión guiada y toma de notas)</p>
+        </div>
+    </section>
+
+    <section id="cierre" class="slide blue-bg fixed-height">
         <div class="slide-content" style="text-align: center;">
-            <!-- Logo AGC -->
             <div style="margin-bottom: 40px;">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Logo-AGC-2020-_%281%29.png" alt="Logo AGC"
                     style="height: 300px; width: auto; filter: brightness(0) invert(1); opacity: 0.9;"
@@ -1254,11 +1303,85 @@
         </div>
     </section>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Animación de las barras del gráfico
+            const barSindicato = document.getElementById('bar-fill-sindicato');
+            const barRed = document.getElementById('bar-fill-red');
+
+            if (barSindicato && barRed) {
+                barSindicato.style.width = '0%';
+                barRed.style.width = '0%';
+
+                setTimeout(() => {
+                    barSindicato.style.width = '15%';
+                    barRed.style.width = '90%';
+                }, 500);
+            }
+
+            // 2. Navegación entre slides con dots
+            const slides = document.querySelectorAll('.slide');
+            const navDots = document.querySelectorAll('.slide-nav-dot');
+
+            // Actualizar dot activo al hacer scroll
+            const updateActiveDot = () => {
+                // Usamos window.innerHeight / 2 para que el punto cambie cuando la mitad de la nueva diapositiva está visible.
+                const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+                slides.forEach((slide, index) => {
+                    const slideTop = slide.offsetTop;
+                    const slideBottom = slideTop + slide.offsetHeight;
+
+                    if (scrollPosition >= slideTop && scrollPosition < slideBottom) {
+                        navDots.forEach(dot => dot.classList.remove('active'));
+                        navDots[index]?.classList.add('active');
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', updateActiveDot);
+            updateActiveDot(); // Inicializar
+
+            // Click en dots para navegar
+            navDots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    slides[index].scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+
+            // 3. Animaciones al entrar en viewport
+            const observerOptions = {
+                // Dispara la animación cuando el 30% del slide es visible.
+                threshold: 0.3,
+                rootMargin: '0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.querySelectorAll('.tile, .visual-placeholder').forEach((el, index) => {
+                            // Aplicar un pequeño retraso para un efecto escalonado (staggered effect)
+                            setTimeout(() => {
+                                el.style.opacity = '1';
+                                el.style.transform = 'translateY(0)';
+                            }, index * 100);
+                        });
+                    }
+                });
+            }, observerOptions);
+
+            slides.forEach(slide => {
+                slide.querySelectorAll('.tile, .visual-placeholder').forEach(el => {
+                    // Inicializar el estado de animación
+                    el.style.opacity = '0';
+                    el.style.transform = 'translateY(30px)';
+                    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                });
+                observer.observe(slide);
+            });
+        });
+    </script>
+
 </body>
 
-
 </html>
-
-
-
-
